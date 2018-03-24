@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="圖層_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	
+		<rect x="12.017" y="58.124" transform="matrix(0.9493 -0.3143 0.3143 0.9493 -20.8519 8.2486)" fill="#FFAB00" width="6.27" height="21.321"/>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="17.588" y="35.436" width="47.854" height="41.214">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="source" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="17.588" y="35.436" width="47.854" height="41.214" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			<rect x="21.666" y="35.243" fill="#FFFFFF" width="3.688" height="44.515"/>
+			<rect x="33.256" y="35.243" fill="#FFFFFF" width="3.688" height="44.515"/>
+			<rect x="44.846" y="35.243" fill="#FFFFFF" width="3.688" height="44.515"/>
+			<rect x="55.645" y="35.243" fill="#FFFFFF" width="3.688" height="44.515"/>
+			<polygon fill="none" points="17.588,56.41 24.292,76.65 65.441,72.176 53.273,35.436 			"/>
+		</g>
+	</mask>
+	<polygon mask="url(#SVGID_1_)" fill="#F70059" points="65.441,72.176 24.291,76.649 17.588,56.41 53.273,35.436 	"/>
+	
+		<rect x="56.574" y="25.663" transform="matrix(0.8321 0.5547 -0.5547 0.8321 25.5905 -28.0636)" fill="#FFAB00" width="5.13" height="5.13"/>
+	
+		<rect x="69.236" y="73.867" transform="matrix(0.832 0.5548 -0.5548 0.832 53.9442 -26.712)" fill="#FFAB00" width="3.672" height="3.672"/>
+	
+		<rect x="80.903" y="54.771" transform="matrix(0.8682 -0.4962 0.4962 0.8682 -17.1628 48.4781)" fill="#FFAB00" width="3.554" height="3.555"/>
+	<path fill="#0181B0" d="M69.684,49.888c0,1.574-1.275,2.851-2.85,2.851s-2.85-1.276-2.85-2.851c0-1.573,1.275-2.85,2.85-2.85
+		S69.684,48.314,69.684,49.888"/>
+	<path fill="#0181B0" d="M89.349,33.644c0,1.102-0.893,1.995-1.995,1.995c-1.102,0-1.995-0.894-1.995-1.995
+		c0-1.103,0.894-1.995,1.995-1.995C88.456,31.648,89.349,32.541,89.349,33.644"/>
+	<path fill="none" stroke="#00ACBA" stroke-width="4" stroke-miterlimit="10" d="M72.264,21.873c2.562,4.498,2.237,6.588,1.27,7.643
+		c-1.468,1.598-4.508,0.929-5.745,2.769c-0.948,1.41-0.244,3.409,0.59,4.986"/>
+	<path fill="none" stroke="#00ACBA" stroke-width="4" stroke-miterlimit="10" d="M74.411,45.319c3.605-2.543,5.838-2.708,7.26-2.253
+		c2.154,0.689,2.596,2.851,4.91,3.342c1.774,0.377,3.535-0.462,4.823-1.31"/>
+	<path fill="none" stroke="#00ACBA" stroke-width="4" stroke-miterlimit="10" d="M89.044,67.896
+		c-5.162,2.396-7.744,1.938-9.146,0.872c-2.121-1.613-1.675-4.728-4.062-6.118c-1.83-1.065-4.177-0.451-5.994,0.321"/>
+</g>
+</svg>

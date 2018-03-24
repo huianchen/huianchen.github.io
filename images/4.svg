@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="圖層_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="14.39" y="6.522" width="71.407" height="68.123">
+		
+			<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="14.39" y="6.522" width="71.407" height="68.123" id="SVGID_1_">
+	<g filter="url(#Adobe_OpacityMaskFilter)">
+		<rect x="30.833" y="24.333" width="41.667" height="30.834"/>
+	</g>
+</mask>
+<g mask="url(#SVGID_1_)">
+	<line fill="none" stroke="#F70059" stroke-width="3" stroke-miterlimit="10" x1="50.438" y1="7.57" x2="15.463" y2="43.406"/>
+	<line fill="none" stroke="#F70059" stroke-width="3" stroke-miterlimit="10" x1="58.657" y1="13.158" x2="23.682" y2="48.994"/>
+	<line fill="none" stroke="#F70059" stroke-width="3" stroke-miterlimit="10" x1="65.669" y1="18.962" x2="30.693" y2="54.798"/>
+	<line fill="none" stroke="#F70059" stroke-width="3" stroke-miterlimit="10" x1="72.213" y1="25.02" x2="37.238" y2="60.855"/>
+	<line fill="none" stroke="#F70059" stroke-width="3" stroke-miterlimit="10" x1="78.652" y1="31.693" x2="43.677" y2="67.529"/>
+	<line fill="none" stroke="#F70059" stroke-width="3" stroke-miterlimit="10" x1="84.723" y1="37.762" x2="49.748" y2="73.598"/>
+</g>
+<rect x="25.404" y="8.334" fill="#0181B0" width="52.559" height="9.666"/>
+<path fill="#0181B0" d="M75.963,20H27.404h-2v1.728v70.432v1.728h2h48.559h2v-1.728V21.728V20H75.963z M71.333,53.954H32.034V25.6
+	h39.299V53.954z"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="42" y1="62" x2="61" y2="62"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="33" y1="66" x2="71" y2="66"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="33" y1="70" x2="71" y2="70"/>
+<path fill="#FFAB00" d="M62.387,85.181H40.98c-2.131,0-3.875-1.744-3.875-3.875v-0.542c0-2.132,1.744-3.875,3.875-3.875h21.407
+	c2.131,0,3.875,1.743,3.875,3.875v0.542C66.262,83.437,64.518,85.181,62.387,85.181"/>
+</svg>
