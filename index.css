@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.2;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -155,38 +156,6 @@ a.contact{
 	font-size: 14px;
 	font-weight: normal;
 }
-
-/*.phone{
-	width: 300px;
-	display: inline-block;
-	position: relative;
-}
-.phone{
-	background: url(./images/portfolio_vip.jpg) no-repeat;
-    background-position: 0 62px;
-    background-size: 100%;
-    width: 260px;
-    height: 504px;
-    display: inline-block;
-    margin: 38px 0 0 0;
-	animation-name: move;
-	animation-duration: 30s;
-	animation-delay: 4s;
-	animation-iteration-count: 1;
-	animation-direction: inherit;
-	animation-timing-function: linear;
-}
-.phone:hover{
-	animation-play-state: paused;
-}
-@keyframes move {
-    	0% {
-    		background-position: 0 62px;
-    	}
-    	100% {
-    		background-position: 0 100%;
-    	}
-    }*/
 .phone{
 	position: relative;
 	display: block;
@@ -230,14 +199,14 @@ video{
 	text-align: center;
 	margin: 20px auto;
 	padding: 20px 0;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid rgba(51,51,51,0.5);
 }
 .mid{
 	width: 750px;
 	margin: 0 auto 65px auto;
 	line-height: 2;
 	text-align: center;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid rgba(51,51,51,0.5);
 	padding: 0 100px;
 }
 .block{
@@ -405,6 +374,27 @@ video{
 	display: inline-block;
 	margin: 2% 1%;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	position: relative;
+	
+}
+.gallery a::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.gallery a:hover::after{
+	opacity: 1;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 #flb-lightbox-image{
 	max-width: 840px;
@@ -472,9 +462,30 @@ footer li:nth-child(3)::before{
     margin: 0 5px 0 0;
 	display: inline-block;
 }
-
-
-
+.gotop{
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	top: 60%;
+	right: 10px;
+	cursor: pointer;
+}
+.gotop::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5px 5px 5px;
+	border-color: transparent transparent #ffffff transparent;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	display: block;
+}
 
 
 
