@@ -54,6 +54,12 @@ a{
 	text-decoration: none;
 	cursor: pointer;
 }
+input, button{
+	background: none;
+	border: none;
+	outline: none;
+	font-family: serif,Microsoft JhengHei;
+}
 img{
 	width: 100%;
 	vertical-align: top;
@@ -101,14 +107,15 @@ header a{
 	margin: 0 10px;
 	line-height: 65px;
 }
-a.contact{
+a.contact, button.contact{
 	border: 1px solid #fff;
 	border-radius: 40px;
 	padding: 5px 10px;
 	line-height: 20px;
 	color: #fff;
+	font-size: 17px;
 }
-.menu a:hover, a.contact:hover{
+.menu a:hover, a.contact:hover, button.contact:hover{
 	color: #ffab00;
 	border-color: #ffab00;
 }
@@ -183,6 +190,9 @@ a.contact{
 }
 .phone video{
 	margin: -21px 0 0 0;
+}
+video::-webkit-media-controls-overlay-play-button {
+  display: none;
 }
 .decor_text{
 	position: absolute;
@@ -451,7 +461,10 @@ footer ul::before{
     margin: -20px 0 0 0;
     display: inline-block;
 }
-footer li:nth-child(2)::before{
+footer li:nth-child(2){
+	font-size: 14px;
+}
+/*footer li:nth-child(2)::before{
 	content: '';
 	width: 20px;
 	height: 20px;
@@ -460,6 +473,10 @@ footer li:nth-child(2)::before{
     vertical-align: sub;
     margin: 0 5px 0 0;
 	display: inline-block;
+}*/
+footer input{
+	font-size: 17px;
+	color: #fff;
 }
 footer li:nth-child(3)::before{
 	content: '';
@@ -470,6 +487,31 @@ footer li:nth-child(3)::before{
     vertical-align: sub;
     margin: 0 5px 0 0;
 	display: inline-block;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: rgba(0,0,0,0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 .gotop{
 	width: 50px;

@@ -168,9 +168,9 @@
 		<footer>
 			<ul id="contact">
 				<li>Anne Chen 陳慧安</li>
-				<li>0926-877690</li>
-				<li>an890623@gmail.com</li>
-				<li><a class="contact" href="#" title="聯絡資訊">Contact</a></li>
+				<li>請以mail與我聯繫：</li>
+				<li><input type="text" value="an890623@gmail.com" id="mymail"></li>
+				<li class="tooltip"><button class="contact" onclick="myFunction()"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy Address</button></li>
 				<li class="decor_text">//// UX // Web // Graphic Designer</li>
 			</ul>
 		</footer>
@@ -202,14 +202,45 @@
 		        $('#gotop').stop().fadeOut("fast");
 		    }
 		});
-		var figure = $(".phone").hover( hoverVideo, hideVideo );
-		function hoverVideo(e) {  
-		    $('video', this).get(0).play(); 
-		}
-		function hideVideo(e) {
-		    $('video', this).get(0).pause(); 
+
+		$(document).ready(function() {
+            // Get media - with autoplay disabled (audio or video)
+            var media = $('video').not("[autoplay='autoplay']");
+            var tolerancePixel = 40;
+
+            function checkMedia(){
+                // Get current browser top and bottom
+                var scrollTop = $(window).scrollTop() + tolerancePixel;
+                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+                media.each(function(index, el) {
+                    var yTopMedia = $(this).offset().top;
+                    var yBottomMedia = $(this).height() + yTopMedia;
+
+                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                        $(this).get(0).play();
+                    } else {
+                        $(this).get(0).pause();
+                    }
+                });
+
+                //}
+            }
+            $(document).on('scroll', checkMedia);
+        });
+
+        function myFunction() {
+			var copyText = document.getElementById("mymail");
+			copyText.select();
+			document.execCommand("Copy");
+			var tooltip = document.getElementById("myTooltip");
+			tooltip.innerHTML = "Copied: " + copyText.value;
 		}
 
+			function outFunc() {
+			var tooltip = document.getElementById("myTooltip");
+			tooltip.innerHTML = "Copy to clipboard";
+		}
 		</script> 
 	</body>
 </html>	
