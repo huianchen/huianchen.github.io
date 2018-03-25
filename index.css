@@ -120,7 +120,7 @@ a.contact{
     animation: bgFadeIn 2s ease-in both;
 }
 .top::before{
-	background: url(images/portfolio_bg.jpg);
+	background: url(./images/portfolio_bg.jpg);
     background-color: #030000;
     background-attachment: fixed;
     background-position: center top;
@@ -162,7 +162,7 @@ a.contact{
 	position: relative;
 }
 .phone{
-	background: url(images/portfolio_vip.jpg) no-repeat;
+	background: url(./images/portfolio_vip.jpg) no-repeat;
     background-position: 0 62px;
     background-size: 100%;
     width: 260px;
@@ -195,7 +195,7 @@ a.contact{
 	content: '';
 	width: 300px;
 	height: 620px;
-	background: url(images/portfolio_phone.svg) no-repeat;
+	background: url(./images/portfolio_phone.svg) no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 0;
@@ -297,7 +297,7 @@ video{
 	animation: bgFadeIn 0s ease-in both;
 }
 .second::before{
-	background: url(images/second_bg.jpg);
+	background: url(./images/second_bg.jpg);
     background-color: #000;
     background-attachment: fixed;
     background-position: center top;
@@ -322,6 +322,40 @@ video{
 	display: inline-block;
 	margin: 30px 20px;
 	vertical-align: top;
+	position: relative;
+}
+.second .mid li:nth-child(2) dl:nth-child(1)::after, .second .mid li:nth-child(2) dl:nth-child(2)::after, .second .mid li:nth-child(4) dl:nth-child(1)::after, .second .mid li:nth-child(4) dl:nth-child(2)::after{
+	content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #666;
+    position: absolute;
+    top: 100px;
+    right: -20px;
+}
+.second .mid li:nth-child(3) dl:nth-child(2)::after, .second .mid li:nth-child(3) dl:nth-child(3)::after{
+	content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #666 transparent transparent;
+    position: absolute;
+    top: 100px;
+    left: -35px;
+}
+.second .mid li:nth-child(2) dl:nth-child(3)::after, .second .mid li:nth-child(3) dl:nth-child(1)::after{
+	content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 8px 0 8px;
+    border-color: #666 transparent transparent transparent;
+    position: absolute;
+    bottom: -50px;
+    right: 95px;
 }
 .step_img{
 	width: 70px;
@@ -366,7 +400,18 @@ video{
     -o-transition: opacity 0.4s ease-in-out;
     transition: opacity 0.4s ease-in-out;
 }
-
+.gallery a{
+	width: calc(100% / 3 - 3%);
+	display: inline-block;
+	margin: 2% 1%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+#flb-lightbox-image{
+	max-width: 840px;
+}
+#flb-lightbox-content img{
+	width: auto;
+}
 footer{
 	text-align: center;
 	height: 400px;
@@ -374,7 +419,7 @@ footer{
 	animation: bgFadeIn 1s ease-in both;
 }
 footer::before{
-	background: url(images/footer_bg.jpg);
+	background: url(./images/footer_bg.jpg);
     background-color: #000;
     background-attachment: fixed;
     background-position: bottom;
@@ -400,7 +445,7 @@ footer ul::before{
 	content: '';
 	width: 100px;
 	height: 100px;
-	background: url(images/head.png) no-repeat;
+	background: url(./images/head.png) no-repeat;
 	background-size: 100%;
 	-webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
@@ -411,7 +456,7 @@ footer li:nth-child(2)::before{
 	content: '';
 	width: 20px;
 	height: 20px;
-	background: url(images/phone.svg) no-repeat;
+	background: url(./images/phone.svg) no-repeat;
 	background-size: 100%;
     vertical-align: sub;
     margin: 0 5px 0 0;
@@ -421,7 +466,7 @@ footer li:nth-child(3)::before{
 	content: '';
 	width: 20px;
 	height: 20px;
-	background: url(images/mail.svg) no-repeat;
+	background: url(./images/mail.svg) no-repeat;
 	background-size: 100%;
     vertical-align: sub;
     margin: 0 5px 0 0;

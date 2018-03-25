@@ -8,7 +8,7 @@
 		<title>ANNE's Portfolio</title>
 		<link rel="shortcut icon" href="./favicon.ico">
 		<link rel="bookmark" href="./favicon.ico">
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="./index.css">
 	</head>
 	<body>
 		<header>
@@ -104,9 +104,9 @@
 					</li>
 					<li class="step">
 						<dl>
-							<dd class="step_img"><img src="./images/4.svg" alt="Mockup"></dd>
-							<dd class="step_tit">Step 4. Mockup</dd>
-							<dd>使用PS、AI軟體進行視覺設計。</dd>
+							<dd class="step_img"><img src="./images/6.svg" alt="Coding"></dd>
+							<dd class="step_tit">Step 6. Coding</dd>
+							<dd>進行網頁切板並交由工程人員做程式套板。</dd>
 						</dl>
 						<dl>
 							<dd class="step_img"><img src="./images/5.svg" alt="Prototype"></dd>
@@ -114,9 +114,9 @@
 							<dd>建立模型並檢視整體視覺與流程是否順暢。</dd>
 						</dl>
 						<dl>
-							<dd class="step_img"><img src="./images/6.svg" alt="Coding"></dd>
-							<dd class="step_tit">Step 6. Coding</dd>
-							<dd>進行網頁切板並交由工程人員做程式套板。</dd>
+							<dd class="step_img"><img src="./images/4.svg" alt="Mockup"></dd>
+							<dd class="step_tit">Step 4. Mockup</dd>
+							<dd>使用PS、AI軟體進行視覺設計。</dd>
 						</dl>
 					</li>
 					<li class="step">
@@ -158,8 +158,12 @@
 				</li>
 			</ul>
 			<p class="tit" id="graphic">Graphic Design</p>
-			<ul class="mid">
-			</ul>
+			<div class="mid gallery">
+				<a href="./images/gallery/170726_edm_800x640.jpg" class="flipLightBox"><img src="./images/gallery/170726_edm_800x640.jpg" alt=""><span></span></a>
+				<a href="./images/gallery/170804_edm_800x640.jpg" class="flipLightBox"><img src="./images/gallery/170804_edm_800x640.jpg" alt=""><span></span></a>
+				<a href="./images/gallery/170816_edm_800x640.jpg" class="flipLightBox"><img src="./images/gallery/170816_edm_800x640.jpg" alt=""><span></span></a>
+				
+			</div>
 		</section>
 		<footer>
 			<ul id="contact">
@@ -171,9 +175,13 @@
 			</ul>
 		</footer>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		
+		<script type="text/javascript">
 		$(function(){
 			$("#gotop").click(function () {
                 jQuery("html,body").animate({
