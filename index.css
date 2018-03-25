@@ -268,6 +268,7 @@ a.contact{
 	margin: 0 15px 0 0;
 }
 .second{
+	height: 850px;
 	color: #fff;
 	padding: 0 0 1px 0;
 	position: relative;
@@ -275,7 +276,7 @@ a.contact{
 }
 .second::before{
 	background: url(./images/second_bg.jpg);
-    background-color: #000;
+    background-color: #191919;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
