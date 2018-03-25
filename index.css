@@ -500,13 +500,12 @@ footer li:nth-child(3)::before{
   background-color: rgba(0,0,0,0.75);
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 5px;
   position: absolute;
   z-index: 1;
   top: 120%;
-  left: 50%;
-  margin-left: -75px;
+  left: calc(50% - 75px);
   opacity: 1;
   transition: opacity 0.3s;
 }
