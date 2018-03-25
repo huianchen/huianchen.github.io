@@ -155,7 +155,8 @@ a.contact{
 	font-size: 14px;
 	font-weight: normal;
 }
-.phone{
+
+/*.phone{
 	width: 300px;
 	display: inline-block;
 	position: relative;
@@ -185,7 +186,11 @@ a.contact{
     	100% {
     		background-position: 0 100%;
     	}
-    }
+    }*/
+.phone{
+	position: relative;
+	display: block;
+}
 .phone::after{
 	content: '';
 	width: 300px;
@@ -193,11 +198,14 @@ a.contact{
 	background: url(images/portfolio_phone.svg) no-repeat;
 	background-size: 100%;
 	position: absolute;
-	top: -21px;
-	left: -21px;
+	top: 0;
+    left: calc(50% - 150px);
 	pointer-events: none;
 	-webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}
+video{
+	margin: 63px 0 0 0;
 }
 .decor_text{
 	position: absolute;

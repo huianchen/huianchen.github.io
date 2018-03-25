@@ -5,9 +5,9 @@
 		<meta name="description" content="ux, web and graphic design portfolio.">
   		<meta name="keywords" content="ux,web,graphic,design">
   		<meta name="author" content="AnneChen">
-		<title>ANNE's portfolio</title>
-		<link rel="shortcut icon" href="/favicon.ico"/>
-		<link rel="bookmark" href="/favicon.ico"/>
+		<title>ANNE's Portfolio</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="bookmark" href="./favicon.ico">
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 	<body>
@@ -34,7 +34,9 @@
 						<span>UX // Web // Graphic Designer</span>
 					</h1>
 				</li>
-				<li class="phone"></li>
+				<li class="phone">
+					<video width="270" height="504"><source src="./images/prototype.mp4" type="video/mp4"></video>
+				</li>
 				<li class="decor_text">//// 2013 - Present</li>
 			</ul>
 			<p class="tit" id="skills">Skills & Experience</p>
@@ -183,6 +185,14 @@
 				$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top - 65}, 500);
 			});
 		});
+		var figure = $(".phone").hover( hoverVideo, hideVideo );
+		function hoverVideo(e) {  
+		    $('video', this).get(0).play(); 
+		}
+		function hideVideo(e) {
+		    $('video', this).get(0).pause(); 
+		}
+
 		</script> 
 	</body>
 </html>	
