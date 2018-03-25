@@ -271,7 +271,7 @@ a.contact{
 	color: #fff;
 	padding: 0 0 1px 0;
 	position: relative;
-	animation: bgFadeIn 0s ease-in both;
+	animation: bgFadeIn 1s ease-in both;
 }
 .second::before{
 	background: url(./images/second_bg.jpg);
