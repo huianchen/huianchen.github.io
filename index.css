@@ -160,6 +160,14 @@ a.contact{
 	position: relative;
 	display: block;
 }
+.phone p{
+	background: url(./images/prototype_cover.jpg) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+    width: 270px;
+    height: 504px;
+    margin: 84px 0 0 0;
+}
 .phone::after{
 	content: '';
 	width: 300px;
@@ -173,8 +181,8 @@ a.contact{
 	-webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
-video{
-	margin: 63px 0 0 0;
+.phone video{
+	margin: -21px 0 0 0;
 }
 .decor_text{
 	position: absolute;
@@ -410,7 +418,7 @@ footer{
 }
 footer::before{
 	background: url(./images/footer_bg.jpg);
-    background-color: #000;
+    background-color: #222;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
