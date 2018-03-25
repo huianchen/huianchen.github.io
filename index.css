@@ -475,6 +475,7 @@ footer li:nth-child(2){
 	display: inline-block;
 }*/
 footer input{
+	width: 155px;
 	font-size: 17px;
 	color: #fff;
 }
