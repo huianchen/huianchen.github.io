@@ -278,8 +278,8 @@ a.contact{
 	background: url(./images/second_bg.jpg);
     background-color: #191919;
     background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: repeat-y;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
