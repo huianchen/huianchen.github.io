@@ -125,10 +125,10 @@ a.contact, button.contact{
 	height: 400px;
 	padding: 200px 0 0 0;
     margin: 0 0 320px 0;
-    animation: bgFadeIn 2s ease-in both;
+    animation: bgFadeIn 1s ease-in both;
 }
 .top::before{
-	background: url(./images/portfolio_bg.jpg);
+	background-image: url(./images/portfolio_bg.jpg)!important;
     background-color: #030000;
     background-attachment: fixed;
     background-position: center top;
