@@ -128,7 +128,7 @@ a.contact, button.contact{
     animation: bgFadeIn 1s ease-in both;
 }
 .top::before{
-	background-image: url(./images/portfolio_bg.jpg)!important;
+	background: url(./images/portfolio_bg.jpg);
     background-color: #030000;
     background-attachment: fixed;
     background-position: center top;
