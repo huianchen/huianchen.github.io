@@ -209,71 +209,67 @@
 		
 		<p class="gotop" id="gotop">TOP</p>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-		
-		$(window).scroll(function() {
-		    if ( $(this).scrollTop() > 300){
-		        $('#gotop').fadeIn("fast");
-		    } else {
-		        $('#gotop').stop().fadeOut("fast");
-		    }
-		});
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			//上方mp4
+			$(document).ready(function() {
+	            var media = $('video').not("[autoplay='autoplay']");
+	            var tolerancePixel = 40;
 
-		$(document).ready(function() {
-            // Get media - with autoplay disabled (audio or video)
-            var media = $('video').not("[autoplay='autoplay']");
-            var tolerancePixel = 40;
+	            function checkMedia(){
+	                var scrollTop = $(window).scrollTop() + tolerancePixel;
+	                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
 
-            function checkMedia(){
-                // Get current browser top and bottom
-                var scrollTop = $(window).scrollTop() + tolerancePixel;
-                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+	                media.each(function(index, el) {
+	                    var yTopMedia = $(this).offset().top;
+	                    var yBottomMedia = $(this).height() + yTopMedia;
 
-                media.each(function(index, el) {
-                    var yTopMedia = $(this).offset().top;
-                    var yBottomMedia = $(this).height() + yTopMedia;
+	                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+	                        $(this).get(0).play();
+	                    } else {
+	                        $(this).get(0).pause();
+	                    }
+	                });
 
-                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
-                        $(this).get(0).play();
-                    } else {
-                        $(this).get(0).pause();
-                    }
-                });
+	                //}
+	            }
+	            $(document).on('scroll', checkMedia);
+	        });
+			//錨點滑動＋GOTOP
+			$(function(){
+				$("#logo, #gotop").click(function () {
+	                jQuery("html,body").animate({
+	                    scrollTop: 0
+	                }, 500);
+	            });
 
-                //}
-            }
-            $(document).on('scroll', checkMedia);
-        });
+				$('.skills, .ux, .web, .graphic, .contact').click(function(){
+					$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top - 65}, 500);
+				});
+			});
+			$(window).scroll(function() {
+			    if ( $(this).scrollTop() > 300){
+			        $('#gotop').fadeIn("fast");
+			    } else {
+			        $('#gotop').stop().fadeOut("fast");
+			    }
+			});
+			//copy url
+	        function myFunction() {
+				var copyText = document.getElementById("mymail");
+				copyText.select();
+				document.execCommand("Copy");
+				var tooltip = document.getElementById("myTooltip");
+				tooltip.innerHTML = "Copied: " + copyText.value;
+			}
 
-        function myFunction() {
-			var copyText = document.getElementById("mymail");
-			copyText.select();
-			document.execCommand("Copy");
-			var tooltip = document.getElementById("myTooltip");
-			tooltip.innerHTML = "Copied: " + copyText.value;
-		}
-
-			function outFunc() {
-			var tooltip = document.getElementById("myTooltip");
-			tooltip.innerHTML = "Copy to clipboard";
-		}
+				function outFunc() {
+				var tooltip = document.getElementById("myTooltip");
+				tooltip.innerHTML = "Copy to clipboard";
+			}
 		</script>
+		
 		<script src="./js/fliplightbox.min.js"></script>
 		<script>$('body').flipLightBox()</script>
-		<script>
-			$(function(){
-			$("#logo, #gotop").click(function () {
-                jQuery("html,body").animate({
-                    scrollTop: 0
-                }, 500);
-            });
-
-			$('.skills, .ux, .web, .graphic, .contact').click(function(){
-				$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top - 65}, 500);
-			});
-		});
-		</script>
-		
 	</body>
 </html>	
