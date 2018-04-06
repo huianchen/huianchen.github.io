@@ -2,9 +2,9 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="ux, web and graphic design portfolio.">
-  		<meta name="keywords" content="ux,web,graphic,design">
-  		<meta name="author" content="AnneChen">
+		<meta name="description" content="ux, web and graphic design portfolio by Anne Chen.">
+  		<meta name="keywords" content="ux design,web design,graphic design, Anne Chen">
+  		<meta name="author" content="Anne Chen">
 		<title>ANNE's Portfolio</title>
 		<link rel="shortcut icon" href="./favicon.ico">
 		<link rel="bookmark" href="./favicon.ico">
@@ -157,9 +157,11 @@
 					<a class="text" href="https://wwww.101vip.com.tw/event-line_170814.html" title="搖籤效果" target="_blank">行銷活動頁面-搖籤效果<span class="btn">看頁面</span></a>					
 				</li>
 			</ul>
-			<p class="tit" id="graphic">Graphic Design</p>
+			<p class="tit" id="graphic">Graphic Design<span>(照片皆為自行拍攝)</span></p>
 			<div class="mid gallery">
-				<a href="./images/gallery/180321_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="images/gallery/180321_edm_800x640.jpg" width="228" height="182"><span></span></a>
+				<a href="./images/gallery/180403_edm_800x640.jpg" class="flipLightBox"><img class="lazy" src="data:" data-src="images/gallery/180403_edm_800x640.jpg" width="228" height="182"><span></span></a>
+				<a href="./images/gallery/180328_edm_800x640.jpg" class="flipLightBox"><img class="lazy" src="data:" data-src="images/gallery/180328_edm_800x640.jpg" width="228" height="182"><span></span></a>
+				<a href="./images/gallery/180321_edm_800x640.jpg" class="flipLightBox"><img class="lazy" src="data:" data-src="images/gallery/180321_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/180212_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/180212_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/180208_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/180208_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/180207_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/180207_edm_800x640.jpg" width="228" height="182"><span></span></a>
@@ -189,8 +191,8 @@
 				<a href="./images/gallery/170704_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170704_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/170627_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170627_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/170620_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170620_edm_800x640.jpg" width="228" height="182"><span></span></a>
-				<a href="./images/gallery/170605_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170605_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/170525_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170525_edm_800x640.jpg" width="228" height="182"><span></span></a>
+				<a href="./images/gallery/170605_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170605_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				<a href="./images/gallery/170517_edm_800x640.jpg" class="flipLightBox"><img class="lazy" data-src="./images/gallery/170517_edm_800x640.jpg" width="228" height="182"><span></span></a>
 				
 				
@@ -214,7 +216,9 @@
 		<script src="./js/fliplightbox.min.js"></script>
 		<script>
 			$(function() {
-			    $("img.lazy").lazyload();
+			    $("img.lazy").lazyload({
+			    	placeholder: "/images/spinner.gif",
+			    });
 			});
 			//上方mp4
 			$(document).ready(function() {

@@ -175,7 +175,7 @@ a.contact, button.contact{
     height: 504px;
     margin: 84px 0 0 0;
 }
-.phone::after{
+.phone::before{
 	content: '';
 	width: 300px;
 	height: 620px;
@@ -184,6 +184,7 @@ a.contact, button.contact{
 	position: absolute;
 	top: 0;
     left: calc(50% - 150px);
+    z-index: 1;
 	pointer-events: none;
 	-webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
@@ -218,6 +219,11 @@ video::-webkit-media-controls-overlay-play-button {
 	margin: 20px auto;
 	padding: 20px 0;
 	border-bottom: 1px solid rgba(51,51,51,0.5);
+}
+.tit span{
+	display: block;
+	font-size: 12px;
+	margin: 10px 0 0 0;
 }
 .mid{
 	width: 750px;
