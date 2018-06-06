@@ -125,7 +125,7 @@ a.contact, button.contact{
 	height: 400px;
 	padding: 200px 0 0 0;
     margin: 0 0 320px 0;
-    animation: bgFadeIn 1s ease-in both;
+    /*animation: bgFadeIn 1s ease-in both;*/
 }
 .top::before{
 	background: url(./images/portfolio_bg.jpg);
