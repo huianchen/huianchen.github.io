@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_small/navBtn</title>
+    <g id="icon_small/navBtn" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/navBtn" transform="translate(3.000000, 5.000000)" fill="#000000">
+            <g id="navBtn">
+                <rect id="Rectangle" x="0" y="0" width="18" height="2.7"></rect>
+                <rect id="Rectangle-Copy" x="0" y="5.4" width="18" height="2.7"></rect>
+                <rect id="Rectangle-Copy-2" x="0" y="10.8" width="18" height="2.7"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
