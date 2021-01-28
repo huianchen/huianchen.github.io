@@ -1,0 +1,353 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.head-desktop, .homepage-content, .content{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	background-color: rgba(255,255,255,0.95);
+	text-align: center;
+	padding: 10px 0;
+}
+.logo{
+	margin-top: 3px;
+	display: inline-block;
+}
+.head-desktop{
+	display: none;
+}
+.nav-mobile{
+	background-color: rgba(255,255,255,0.95);
+	padding: 10px 0;
+	border-top: 1px solid #ffdb00;
+}
+.nav-mobile a, .head-desktop nav a, .head-desktop nav button{
+	font-size: 14px;
+	color: black;
+}
+.nav-mobile a{
+	width: calc(100% / 3 - 3px);
+	text-align: center;
+	display: inline-block;
+}
+.show{
+	font-weight: 600;
+	border-bottom: 8px solid #ffdb00;
+	padding-bottom: 6px;
+}
+.sticky{
+	width: 100%;
+	border-top: none;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.homepage-container{
+	background: linear-gradient(to bottom, #ffdb00 80%, white 0%);
+}
+.homepage-content{
+	text-align: center;
+	padding-top: 40px;
+	overflow: hidden;
+}
+.homepage-content h1, .homepage-content img{
+	display: block;
+}
+.homepage-content h1{
+	font-size: 28px;
+	font-weight: 600;
+	text-align: left;
+	vertical-align: middle;
+}
+.homepage-content i{
+	color: white;
+}
+.homepage-content span{
+	margin-left: 13px;
+	display: block;
+}
+.homepage-content .author{
+	font-size: 18px;
+	font-weight: 400;
+}
+.homepage-content img{
+	width: 65%;
+	min-width: 220px;
+	max-width: 300px;
+	margin: -20px 0 0 auto;
+}
+.content{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.content.first{
+	margin-bottom: 20px;
+}
+.title{
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 3px;
+	margin-bottom: 20px;
+	border-left: 8px solid #ffdb00;
+}
+article{
+	width: calc(100% - 22px);
+	padding: 10px;
+	margin: 0 1px 20px 1px;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.4); 
+	float: left;
+}
+article a{
+	width: calc(60% - 10px);
+	float: left;
+}
+.article-img{
+	width: 40%;
+	margin-right: 10px;
+}
+.article-title, .article-brief{
+	margin-bottom: 10px;
+}
+.article-title{
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(0,0,0,0.75);
+}
+.article-brief{
+	display: none;
+}
+.article-date{
+	font-size: 13px;
+	color: rgba(0,0,0,0.4);
+	display: block;
+}
+.article-date::before{
+	content: '';
+	background-image: url("../images/icon_small/calander.svg");
+	background-size: 100%;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	opacity: 0.6;
+}
+.resume-content{
+	overflow: hidden;
+}
+.resume-content.second, .resume-title.second{
+	margin-top: 20px;
+}
+.resume-title{
+	width: 100%;
+	color: rgba(0,0,0,0.75);
+	font-weight: 600;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed rgba(0,0,0,0.2);
+	float: left;
+}
+.left-column, .details{
+	float: left;
+}
+.left-column{
+	width: 55px;
+	font-size: 13px;
+	color: rgba(0,0,0,0.4);
+	text-align: center;
+	margin-right: 10px;
+}
+.left-column span{
+	display: block;
+}
+.details{
+	width: calc(100% - 91px);
+	font-size: 16px;
+	color: rgba(0,0,0,0.6);
+	padding-left: 25px;
+	border-left: 1px solid #ffdb00;
+}
+.details.first{
+	padding-bottom: 20px;
+}
+.details.noborder{
+	border: none;
+}
+.details li{
+	margin-bottom: 5px;
+	list-style: disc;
+}
+.details li.sub-title, .details li.nobullet{
+	margin-bottom: 10px;
+	list-style: none;
+}
+.details li.nobullet, .details.noborder .sub-title{
+	margin-left: -15px;
+}
+.sub-title::before{
+	content: "";
+	width: 9px;
+	height: 9px;
+	background-color: #ffdb00;
+	border-radius: 9px;
+	margin: 0 5px 0 -30px;
+	display: inline-block;
+}
+.sub-title span{
+	color: rgba(0,0,0,0.75);
+	font-weight: 600;
+}
+.details.noborder .sub-title::before{
+	display: none;
+}
+.skills-row{
+	margin-bottom: 20px;
+}
+.skills-row.last, .about-content p.last{
+	margin-bottom: 0;
+}
+.skills-row img, .skills-row .details{
+	vertical-align: middle;
+	display: inline-block;
+	float: none;
+}
+.skills-row .details .sub-title{
+	margin-bottom: 0;
+}
+.about-content{
+	color: rgba(0,0,0,0.6);
+	margin-top: 10px;
+}
+.about-content p{
+	margin-bottom: 15px;
+}
+@media only screen and (min-width: 480px){
+	header{
+		box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.logo.mobile, .nav-mobile{
+		display: none;
+	}
+	.head-desktop{
+		text-align: left;
+		display: block;
+	}
+	.head-desktop nav{
+		float: right;
+	}
+	.head-desktop nav a{
+		margin-right: 20px;
+	}
+	nav button{
+		background-color: #ffdb00;
+		border-radius: 5px;
+		padding: 10px 15px;
+		display: inline-block;
+	}
+	nav button::before{
+		content: '';
+		background-image: url("../images/icon_small/mail.svg");
+		background-size: 100%;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		vertical-align: middle; 
+	}
+	main{
+		margin-top: 58px;
+	}
+	.homepage-container{
+		background: linear-gradient(to bottom, #ffdb00 85%, white 0%);
+	}
+	.homepage-content h1, .homepage-content img{
+		display: inline-block;
+	}
+	.homepage-content h1{
+		font-size: 32px;
+	}
+	.homepage-content span{
+		margin-left: 16px;
+	}
+	.homepage-content img{
+		margin: 0 0 0 20px;
+	}
+	.content{
+		margin-bottom: 60px;
+	}
+	.content.first{
+		margin-bottom: 40px;
+	}
+	article{
+		width: calc(50% - 40px);
+		margin: 0 10px 20px 10px;
+	}
+	article a{
+		width: 100%;
+		float: none;
+	}
+	.article-img{
+		width: 100%;
+		margin: 0 0 10px 0;
+		display: block;
+	}
+	.article-brief{
+		font-size: 14px;
+		color: rgba(0,0,0,0.6);
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;  
+		overflow: hidden;
+	}
+}
+@media only screen and (min-width: 768px){
+	.homepage-content h1{
+		margin-top: -60px;
+	}
+	article{
+		width: calc(100% / 3 - 40px);
+	}
+	.resume-content{
+		width: calc(50% - 20px);
+		margin: 0 10px;
+		float: left;
+	}
+	.resume-content.second{
+		margin-top: 0;
+	}
+}
+@media only screen and (min-width: 1024px){
+	.homepage-content h1{
+		font-size: 42px;
+	}
+	.homepage-content span{
+		margin-left: 22px;
+	}
+	.homepage-content img{
+		max-width: 344px;
+		margin: 0 0 0 40px;
+	}
+	article{
+		width: calc(25% - 40px);
+	}
+	article:hover{
+		box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+	}
+	.about-img, .about-content{
+		width: calc(50% - 10px);
+		float: right;
+	}
+	.about-img{
+		margin: 30px 0 0 20px;
+	}
+}

@@ -2,14 +2,175 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="product design, UX design, UI design, web development">
-	<meta name="description" content="“Product design is what I take pride in.” When talking about product design, there is always a spark in my eyes. Hi, I'm Anne, a designer who can identify users' needs and come up with solutions. Also, I'm good at HTML, CSS, Sass, and responsive web design.">
+	<title>Anne's Portfolio - A portfolio of a UX designer/UI designer/web developer</title>
+	<meta name="description" content="“Product design is what I take pride in.” When talking about product design, there is always a spark in my eyes. Hi, I'm Anne, a UX designer who can identify users' needs and come up with solutions, a UI designer who is able to create a mock-up and a prototype, and most importantly, I'm also a web developer who is good at HTML, CSS, Sass, and responsive web design. Here is my portfolio.">
+	<meta name="keywords" content="product design, UX designer, UI designer, web developer, web designer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="QdoxjLfBUXO8UkxClsyrax_sdIfFdWOPNiK5ca24IvM" />
-	<title>Anne's Portfolio - A UX designer/UI designer/web developer</title>
-	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 <body>
-123
+	<header>
+		<div class="head-desktop">
+			<a class="logo" href="/" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" height="33" width="101"></a>
+			<nav>
+				<a href="#projects">Projects</a>
+				<a href="#resume">Resume</a>
+				<a href="#about">About</a>
+				<button>Contact</button>
+			</nav>
+		</div>
+		<a class="logo mobile" href="/" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" height="33" width="101"></a>
+	</header>
+	<nav class="nav-mobile" id="navMobile">
+		<a href="#projects"><span id="projectBtn">Projects</span></a>
+		<a href="#resume"><span id="resumeBtn">Resume</span></a>
+		<a href="#about"><span id="aboutBtn">About</span></a>
+	</nav>
+	<main>
+		<section class="homepage-container">
+			<div class="homepage-content">
+				<h1><i>“</i>Product design<span>is what I take pride in.<i>”</i></span><span class="author">- Anne</span></h1>
+				<img src="images/illustration/anne.svg" alt="Anne is a UX/UI/web designer">
+			</div>
+		</section>
+		<section class="content first" id="projects">
+			<h2 class="title">Projects</h2>
+			<article>
+				<a class="article-img" href="/articles/redesign-the-signup-process.html" title="Redesign the signup process"><img src="images/pics/signup.jpg" alt="Redesign the signup process" loading="lazy" width="100%"></a>
+				<a href="/articles/redesign-the-signup-process.html" title="Redesign the signup process">
+					<h3 class="article-title">Redesign the signup process</h3>
+					<span class="article-brief">The original registration process only allowed users to use their ID number to sign up. Besides, the users had to provide their email address. However, it has discouraged a lot of people from becoming a member. Hence, the Tasker team decided to redesign the signup process and make the users more willing to register Tasker.</span>
+					<span class="article-date">Launched in May 2020</span>
+				</a>
+			</article>
+			<article>
+				<a class="article-img" href="/articles/create-an-online-chat-system.html" title="Create an online chat system"><img src="images/pics/chat.jpg" alt="Create an online chat system" loading="lazy" width="100%"></a>
+				<a href="/articles/create-an-online-chat-system.html" title="Create an online chat system">
+					<h3 class="article-title">Create an online chat system</h3>
+					<span class="article-brief">Communication plays the most important role when people work remotely. In order to facilitate communication between freelancers and clients, the Tasker team decided to build an online chat system. The following were the objectives of this project</span>
+					<span class="article-date">Launched in Jan 2020</span>
+				</a>
+			</article>
+			<article>
+				<a class="article-img" href="/articles/redesign-the-portfolio-page.html" title="Redesign the portfolio page"><img src="images/pics/portfolio.jpg" alt="Redesign the portfolio page" loading="lazy" width="100%"></a>
+				<a href="/articles/redesign-the-portfolio-page.html" title="Redesign the portfolio page">
+					<h3 class="article-title">Redesign the portfolio page</h3>
+					<span class="article-brief">By organizing the feedback given by freelancers, I discovered several problems that freelancers have encountered while editing their portfolios on Tasker</span>
+					<span class="article-date">Launched in Sep 2019</span>
+				</a>
+			</article>
+			<article>
+				<a class="article-img" href="/articles/redesign-tasker.html" title="Redesign Tasker出任務外包"><img src="images/pics/tasker.jpg" alt="Redesign Tasker出任務外包" loading="lazy" width="100%"></a>
+				<a href="/articles/redesign-tasker.html" title="Redesign Tasker出任務外包">
+					<h3 class="article-title">Redesign Tasker出任務外包</h3>
+					<span class="article-brief">Before “Tasker”, the website was called “518外包網”, and it was designed for freelancers to find remote work. However, there were fewer and fewer jobs on the site. Thus, the Tasker team decided to rebrand the website to attract more people to hire freelancers via Tasker.</span>
+					<span class="article-date">Launched in Aug 2019</span>
+				</a>
+			</article>
+		</section>
+		<section class="content" id="resume">
+			<h2 class="title">Resume</h2>
+			<div class="resume-content">
+				<h3 class="resume-title">Work experience</h3>
+				<div class="left-column">Dec/2014<span>|</span><span>Jul/2020</span></div>
+				<ul class="details first">
+					<li class="sub-title"><span>Web designer</span>, ADDCN Technology</li>
+					<li>Designed questionnaires to identify the users’ needs.</li>
+					<li>Came up with solutions to meet users’ needs.</li>
+					<li>Designed user flow.</li>
+					<li>Designed user interface and created a prototype.</li>
+					<li>Coded HTML and Sass.</li>
+					<li>Collaborated with developers and stakeholders.</li>
+					<li>Used Google Analytics to examine the results.</li>
+					<li>Created Tasker style guide.</li>
+					<li>Took commercial photographs for luxury goods.</li>
+					<li>Designed banner ads to draw customers’ attention.</li>
+				</ul>
+				<div class="left-column">Mar/2013<span>|</span><span>Aug/2014</span></div>
+				<ul class="details">
+					<li class="sub-title"><span>Graphic designer</span>, Wako</li>
+					<li>Designed banner ads to draw customers’ attention.</li>
+					<li>Published products on different eCommerce platforms.</li>
+					<li>Designed product flyers or brochures to attract customers.</li>
+				</ul>
+				<h3 class="resume-title second">Education</h3>
+				<div class="left-column">Sep/2007<span>|</span><span>Jun/2011</span></div>
+				<ul class="details">
+					<li class="sub-title"><span>B.S. in Textile & Clothing</span></li>
+					<li class="nobullet">Fu Jen University</li>
+				</ul>
+			</div>
+			<div class="resume-content second">
+				<h3 class="resume-title">Skills & Tools</h3>
+				<div class="skills-row">
+					<img src="images/icon/research_y.svg" alt="Research skills" width="55">
+					<ul class="details noborder">
+						<li class="sub-title"><span>Research skills</span></li>
+						<li class="nobullet">Questionnaires, Data analysis</li>
+					</ul>
+				</div>
+				<div class="skills-row">
+					<img src="images/icon/design_y.svg" alt="Design skills" width="55">
+					<ul class="details noborder">
+						<li class="sub-title"><span>Design skills</span></li>
+						<li class="nobullet">User flow, Wireframe, Mockup, Prototype, Banner ads, Logo, Photography</li>
+					</ul>
+				</div>
+				<div class="skills-row">
+					<img src="images/icon/develop_y.svg" alt="Coding skills" width="55">
+					<ul class="details noborder">
+						<li class="sub-title"><span>Coding skills</span></li>
+						<li class="nobullet">HTML, CSS, Sass, Responsive web design</li>
+					</ul>
+				</div>
+				<div class="skills-row">
+					<img src="images/icon/language_y.svg" alt="Language" width="55">
+					<ul class="details noborder">
+						<li class="sub-title"><span>Language</span></li>
+						<li class="nobullet">Chinese: Native<p>English: Upper-intermediate, TOEFL 100<p></li>
+					</ul>
+				</div>
+				<div class="skills-row last">
+					<img src="images/icon/tool_y.svg" alt="Tools" width="55">
+					<ul class="details noborder">
+						<li class="sub-title"><span>Tools</span></li>
+						<li class="nobullet">Sketch, Photoshop, Illustrator, InVision, Google Analytics, Hotjar, Gitlab, Github</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="content" id="about">
+			<h2 class="title">About</h2>
+			<img class="about-img" src="images/pics/logo.jpg" alt="About Anne" loading="lazy" width="100%">
+			<div class="about-content">
+				<p>“Product design is what I take pride in.” When talking about product design, there is always a spark in my eyes.</p> 
+				<p>For me, discovering users’ needs to finally satisfy their requirements is a fascinating process. Not only does it give me a sense of achievement, but it also arouses my passion for learning. That is, when brainstorming solutions with partners, it’s interesting to learn many different perspectives. Also, to make users’ experiences better, I am always eager to gain knowledge about design trends and best practices.</p><p class="last">I consider myself a curious person, and there is no doubt that product design can satisfy my curiosity. Similarly, when I’m not working, I like to try new things such as running a half-marathon, biking up a mountain, or attending a dance class.</p>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+	<script>
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the header
+		var header = document.getElementById("navMobile");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+
+		}
+	</script>
 </body>
 </html>
