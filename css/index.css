@@ -309,13 +309,14 @@ footer p{
 	z-index: 1;
 }
 .fixed-btn button{
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	background-size: 100%;
 	filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.2));
 }
 .gotop{
 	background-image: url("../images/icon/gotop.svg");
+	margin-bottom: 5px;
 	display: block;
 }
 .contactme{
