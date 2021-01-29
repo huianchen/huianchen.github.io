@@ -13,20 +13,20 @@
 <body>
 	<header>
 		<div class="head-desktop">
-			<a class="logo" href="/" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" height="33" width="101"></a>
+			<a class="logo" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" width="110"></a>
 			<nav>
-				<a href="#projects">Projects</a>
-				<a href="#resume">Resume</a>
-				<a href="#about">About</a>
-				<button>Contact</button>
+				<a href="#projects" title="See projects">Projects</a>
+				<a href="#resume" title="See resume">Resume</a>
+				<a href="#about" title="About Anne">About</a>
+				<button class="contact">Contact</button>
 			</nav>
 		</div>
-		<a class="logo mobile" href="/" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" height="33" width="101"></a>
+		<a class="logo mobile" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" width="110"></a>
 	</header>
 	<nav class="nav-mobile" id="navMobile">
-		<a href="#projects"><span id="projectBtn">Projects</span></a>
-		<a href="#resume"><span id="resumeBtn">Resume</span></a>
-		<a href="#about"><span id="aboutBtn">About</span></a>
+		<a href="#projects" id="projectBtn" title="See projects"><span>Projects</span></a>
+		<a href="#resume" id="resumeBtn" title="See resume"><span>Resume</span></a>
+		<a href="#about" id="aboutBtn" title="About Anne"><span>About</span></a>
 	</nav>
 	<main>
 		<section class="homepage-container">
@@ -150,10 +150,25 @@
 			</div>
 		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<p><img src="images/pics/photo.png" alt="Anne" width="80"></p>
+		<p class="white bold">Anne Chen</p>
+		<p class="mail">xiaoann.tw@gmail.com</p>
+		<p>Please do not hesitate to contact me!</p>
+		<p class="social">
+			<a href="" title="Linkedin" target="_blank"><img src="images/icon_social/circle_linkedin.svg" alt="Linkedin" width="40"></a>
+			<a href="https://www.tasker.com.tw/workroom/BV7rVM?" title="Tasker工作室" target="_blank"><img src="images/icon_social/circle_tasker.svg" alt="Tasker工作室" width="40"></a>
+			<a href="" title="Cake Resume" target="_blank"><img src="images/icon_social/circle_cake.svg" alt="Cake Resume" width="40"></a>
+		</p>
+	</footer>
+	<div class="fixed-btn">
+		<button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="gotop" id="goTop" title="Go to top"></button>
+		<button class="contactme" title="Contact me"></button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		// When the user scrolls the page, execute myFunction
-		window.onscroll = function() {myFunction()};
+		window.onscroll = function() {stickyFunction()};
 
 		// Get the header
 		var header = document.getElementById("navMobile");
@@ -161,16 +176,36 @@
 		// Get the offset position of the navbar
 		var sticky = header.offsetTop;
 
-
 		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-			if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			} else {
-				header.classList.remove("sticky");
+		function stickyFunction() {
+			if (screen.width < 480){
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
 			}
-
 		}
+		$(window).scroll(function(){
+		    if($(window).scrollTop() < $("#projects").offset().top - 10 || $(window).scrollTop() > $("#resume").offset().top - 10)
+		        $('#projectBtn').removeClass('show');
+		    else
+		        $('#projectBtn').addClass('show');
+		});
+
+		$(window).scroll(function(){
+		    if($(window).scrollTop() < $("#resume").offset().top - 10 || $(window).scrollTop() > $("#about").offset().top - 10)
+		        $('#resumeBtn').removeClass('show');
+		    else
+		        $('#resumeBtn').addClass('show');
+		});
+
+		$(window).scroll(function(){
+		    if($(window).scrollTop() < $("#about").offset().top - 10)
+		        $('#aboutBtn').removeClass('show');
+		    else
+		        $('#aboutBtn').addClass('show');
+		});
 	</script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -12,33 +15,36 @@ header{
 	width: 100%;
 	background-color: rgba(255,255,255,0.95);
 	text-align: center;
-	padding: 10px 0;
 }
 .logo{
-	margin-top: 3px;
 	display: inline-block;
+}
+.logo.mobile{
+	width: 100%;
+	padding: 5px 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #ffdb00;
+	display: block;
 }
 .head-desktop{
 	display: none;
 }
 .nav-mobile{
 	background-color: rgba(255,255,255,0.95);
-	padding: 10px 0;
-	border-top: 1px solid #ffdb00;
 }
-.nav-mobile a, .head-desktop nav a, .head-desktop nav button{
+.nav-mobile a, .head-desktop nav a, .head-desktop .contact{
 	font-size: 14px;
 	color: black;
 }
 .nav-mobile a{
 	width: calc(100% / 3 - 3px);
 	text-align: center;
+	padding: 10px 0;
 	display: inline-block;
 }
 .show{
+	background: #ffdb00;
 	font-weight: 600;
-	border-bottom: 8px solid #ffdb00;
-	padding-bottom: 6px;
 }
 .sticky{
 	width: 100%;
@@ -47,10 +53,14 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 }
 .sticky + main{
-	padding-top: 45px;
+	padding-top: 36px;
+}
+#projects, #resume, #about{
+	padding-top: 70px;
+	margin-top: -70px;
 }
 .homepage-container{
 	background: linear-gradient(to bottom, #ffdb00 80%, white 0%);
@@ -107,13 +117,39 @@ article{
 	border-radius: 5px;
 	box-shadow: 0 0 1px 0 rgba(0,0,0,0.4); 
 	float: left;
+	position: relative;
+}
+article::before, article::after{
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+article::before{
+	content: "";
+	height: 100%;
+	background: rgba(255,255,255,0.95);
+	border-radius: 5px;
+}
+article::after{
+	content: "Coming Soon";
+	font-size: 21px;
+	font-weight: 600;
+	text-align: center;
+	color: rgba(0,0,0,0.2);
+	margin: auto;
+	position: absolute;
+	top: calc(50% - 15px);
 }
 article a{
-	width: calc(60% - 10px);
-	float: left;
+	width: calc(60% - 12px);
+	display: inline-block;
+	vertical-align: middle;
 }
 .article-img{
-	width: 40%;
+	width: 39%;
 	margin-right: 10px;
 }
 .article-title, .article-brief{
@@ -231,34 +267,97 @@ article a{
 .about-content p{
 	margin-bottom: 15px;
 }
+footer{
+	background: linear-gradient(to bottom, white 25%, black 0);
+	font-size: 14px;
+	text-align: center;
+	color: rgba(255,255,255,0.75);
+	padding-top: 20px;
+}
+footer p{
+	margin-bottom: 5px;
+}
+.white{
+	color: white;
+}
+.bold{
+	font-size: 18px;
+	font-weight: 600;
+}
+.mail::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url("../images/icon_small/mail_white.svg");
+	background-size: 100%;
+	margin-right: 3px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	opacity: 0.75;
+}
+.social{
+	margin-bottom: 0;
+}
+.social a{
+	margin: 20px 10px;
+	display: inline-block;
+}
+.fixed-btn{
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	z-index: 1;
+}
+.fixed-btn button{
+	width: 60px;
+	height: 60px;
+	background-size: 100%;
+	filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.2));
+}
+.gotop{
+	background-image: url("../images/icon/gotop.svg");
+	display: block;
+}
+.contactme{
+	background-image: url("../images/icon/contact.svg");
+}
 @media only screen and (min-width: 480px){
 	header{
 		box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 1;
+		z-index: 2;
 	}
 	.logo.mobile, .nav-mobile{
 		display: none;
 	}
 	.head-desktop{
 		text-align: left;
+		padding: 10px 0;
 		display: block;
 	}
 	.head-desktop nav{
+		margin-top: 2px;
 		float: right;
 	}
 	.head-desktop nav a{
-		margin-right: 20px;
-	}
-	nav button{
-		background-color: #ffdb00;
-		border-radius: 5px;
-		padding: 10px 15px;
+		width: 70px;
 		display: inline-block;
 	}
-	nav button::before{
+	.head-desktop nav a:nth-child(2){
+		width: 72px;
+	}
+	.head-desktop nav a:nth-child(3){
+		width: 56px;
+	}
+	.head-desktop .contact{
+		background-color: #ffdb00;
+		text-align: center;
+		border-radius: 5px;
+		padding: 10px 15px;
+	}
+	.head-desktop .contact::before{
 		content: '';
 		background-image: url("../images/icon_small/mail.svg");
 		background-size: 100%;
@@ -312,6 +411,13 @@ article a{
 		-webkit-box-orient: vertical;  
 		overflow: hidden;
 	}
+	.fixed-btn button.gotop{
+		width: 80px;
+		height: 80px;
+	}
+	.contactme{
+		display: none;
+	}
 }
 @media only screen and (min-width: 768px){
 	.homepage-content h1{
@@ -352,5 +458,32 @@ article a{
 	}
 	.about-img{
 		margin: 30px 0 0 20px;
+	}
+	.head-desktop nav a:hover{
+		font-weight: 600;
+	}
+	.social a:hover, .gotop:hover, .contact:hover{
+		position: relative;
+	}
+	.contact:hover::after, .social a:hover::after, .gotop:hover::after{
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.4);
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.contact:hover::after{
+		font-weight: normal;
+		border-radius: 5px;	
+	}
+	.gotop:hover::after{
+		width: 62px;
+		height: 62px;
+		background-color: rgba(0,0,0,0.2);
+		top: 9px;
+		left: 9px;
 	}
 }
