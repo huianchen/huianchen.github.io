@@ -26,7 +26,7 @@ time, mark, audio, video {
 
 /* make sure to set some focus styles for accessibility */
 :focus {
-    outline: 0;
+    outline: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -131,8 +131,8 @@ a {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
-    outline: thin dotted;
+a:focus, button:focus {
+    outline: none;
 }
 
 /**

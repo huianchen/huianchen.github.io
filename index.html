@@ -9,6 +9,10 @@
 	<meta name="google-site-verification" content="QdoxjLfBUXO8UkxClsyrax_sdIfFdWOPNiK5ca24IvM" />
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 	<header>
@@ -18,7 +22,7 @@
 				<a href="#projects" title="See projects">Projects</a>
 				<a href="#resume" title="See resume">Resume</a>
 				<a href="#about" title="About Anne">About</a>
-				<button class="contact">Contact</button>
+				<button class="contact desktop">Contact</button>
 			</nav>
 		</div>
 		<a class="logo mobile" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" width="110"></a>
@@ -31,7 +35,7 @@
 	<main>
 		<section class="homepage-container">
 			<div class="homepage-content">
-				<h1><i>“</i>Product design<span>is what I take pride in.<i>”</i></span><span class="author">- Anne</span></h1>
+				<h1>Product design <span>is what I take pride in.”</span><span class="author">- Anne</span></h1>
 				<img src="images/illustration/anne.svg" alt="Anne is a UX/UI/web designer">
 			</div>
 		</section>
@@ -163,21 +167,22 @@
 	</footer>
 	<div class="fixed-btn">
 		<button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="gotop" id="goTop" title="Go to top"></button>
-		<button class="contactme" title="Contact me"></button>
+		<button class="contact mobile" title="Contact me"></button>
+	</div>
+	<div class="information">
+		<p class="bold">Contact me <button class="close"></button></p>
+		<p> Anne Chen</p>
+		<p class="copy-mail"><span class="mail black"><input type="text" value="xiaoann.tw@gmail.com" id="myEmail"></span><button onclick="copyToClipboard()" title="Copy mail address" id="copyBtn">Copy</button></p>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
-		// When the user scrolls the page, execute myFunction
 		window.onscroll = function() {stickyFunction()};
-
-		// Get the header
-		var header = document.getElementById("navMobile");
-
-		// Get the offset position of the navbar
-		var sticky = header.offsetTop;
-
-		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		
 		function stickyFunction() {
+			var header = document.getElementById("navMobile");
+			
+			var sticky = header.offsetTop;
+			
 			if (screen.width < 480){
 				if (window.pageYOffset > sticky) {
 					header.classList.add("sticky");
@@ -186,25 +191,48 @@
 				}
 			}
 		}
+
+
+		function copyToClipboard() {
+			var copyText = document.getElementById("myEmail");
+
+			copyText.select();
+			copyText.setSelectionRange(0, 99999);
+
+			document.execCommand("copy");
+
+			var successed = document.getElementById("copyBtn");
+			successed.innerHTML = "Copied";
+			successed.classList.add("successed");
+		}
+
 		$(window).scroll(function(){
 		    if($(window).scrollTop() < $("#projects").offset().top - 10 || $(window).scrollTop() > $("#resume").offset().top - 10)
-		        $('#projectBtn').removeClass('show');
+		        $('#projectBtn').removeClass('active');
 		    else
-		        $('#projectBtn').addClass('show');
+		        $('#projectBtn').addClass('active');
 		});
 
 		$(window).scroll(function(){
 		    if($(window).scrollTop() < $("#resume").offset().top - 10 || $(window).scrollTop() > $("#about").offset().top - 10)
-		        $('#resumeBtn').removeClass('show');
+		        $('#resumeBtn').removeClass('active');
 		    else
-		        $('#resumeBtn').addClass('show');
+		        $('#resumeBtn').addClass('active');
 		});
 
 		$(window).scroll(function(){
 		    if($(window).scrollTop() < $("#about").offset().top - 10)
-		        $('#aboutBtn').removeClass('show');
+		        $('#aboutBtn').removeClass('active');
 		    else
-		        $('#aboutBtn').addClass('show');
+		        $('#aboutBtn').addClass('active');
+		});
+
+		$(".contact").click(function(){
+			$(".information").addClass("show");
+		});
+
+		$(".close").click(function(){
+			$(".information").removeClass("show");
 		});
 	</script>
 </body>

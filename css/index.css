@@ -30,9 +30,9 @@ header{
 	display: none;
 }
 .nav-mobile{
-	background-color: rgba(255,255,255,0.95);
+	background-color: rgba(255,255,255,0.98);
 }
-.nav-mobile a, .head-desktop nav a, .head-desktop .contact{
+.nav-mobile a, .head-desktop nav a, .contact.desktop{
 	font-size: 14px;
 	color: black;
 }
@@ -42,17 +42,39 @@ header{
 	padding: 10px 0;
 	display: inline-block;
 }
-.show{
+.active{
 	background: #ffdb00;
 	font-weight: 600;
 }
+#projectBtn.active{
+	border-radius: 41px 0 0 41px;
+}
+#aboutBtn.active{
+	border-radius: 0 41px 41px 0;
+}
+.contact.desktop{
+	background-color: #ffdb00;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+.contact.desktop::before{
+	content: '';
+	background-image: url("../images/icon_small/mail.svg");
+	background-size: 100%;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle; 
+}
 .sticky{
-	width: 100%;
-	border-top: none;
+	width: 90%;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 41px;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 10px;
+	left: 5%;
 	z-index: 2;
 }
 .sticky + main{
@@ -77,18 +99,23 @@ header{
 	font-size: 28px;
 	font-weight: 600;
 	text-align: left;
+	padding-left: 32px;
 	vertical-align: middle;
+	position: relative;
 }
-.homepage-content i{
+.homepage-content h1::before{
+	content: "“";
+	font-size: 70px;
+	font-weight: 600;
 	color: white;
-}
-.homepage-content span{
-	margin-left: 13px;
-	display: block;
+	position: absolute;
+	top: -35px;
+	left: 0;
 }
 .homepage-content .author{
 	font-size: 18px;
 	font-weight: 400;
+	display: block;
 }
 .homepage-content img{
 	width: 65%;
@@ -147,6 +174,7 @@ article a{
 	width: calc(60% - 12px);
 	display: inline-block;
 	vertical-align: middle;
+	pointer-events: none;
 }
 .article-img{
 	width: 39%;
@@ -288,12 +316,15 @@ footer p{
 	content: "";
 	width: 16px;
 	height: 16px;
-	background: url("../images/icon_small/mail_white.svg");
+	background-image: url("../images/icon_small/mail_white.svg");
 	background-size: 100%;
 	margin-right: 3px;
 	display: inline-block;
 	vertical-align: text-bottom;
 	opacity: 0.75;
+}
+.mail.black::before{
+	background-image: url("../images/icon_small/mail.svg");
 }
 .social{
 	margin-bottom: 0;
@@ -305,12 +336,12 @@ footer p{
 .fixed-btn{
 	position: fixed;
 	right: 0;
-	bottom: 80px;
+	bottom: 60px;
 	z-index: 1;
 }
 .fixed-btn button{
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	background-size: 100%;
 	filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.2));
 }
@@ -319,8 +350,77 @@ footer p{
 	margin-bottom: 5px;
 	display: block;
 }
-.contactme{
+.contact.mobile{
 	background-image: url("../images/icon/contact.svg");
+}
+.information{
+	width: auto;
+	background-color: rgba(255,255,255,0.98);
+	font-size: 14px;
+	padding: 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 3;
+	display: none;
+}
+.information.show{
+	display: block;
+}
+.information .bold{
+	font-size: 14px;
+	padding-left: 3px;
+	margin-bottom: 10px;
+	border-left: 8px solid #ffdb00;
+}
+.information .close{
+	width: 16px;
+	height: 16px;
+	background-image: url("../images/icon_small/close.svg");
+	background-size: 100%;
+	margin-top: 2px;
+	float: right;
+}
+.information .copy-mail{
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.information .copy-mail .mail, .information .copy-mail button{
+	vertical-align: middle;
+}
+.information .copy-mail .mail{
+	padding: 10px 10px 10px 5px;
+}
+.information .mail input{
+	border: none;
+}
+.information .copy-mail button{
+	background-color: #ffdb00;
+	padding: 10px 15px;
+	border-radius: 0 5px 5px 0;
+}
+.information .copy-mail button.successed::before{
+	content: "";
+	width: 14px;
+	height: 14px;
+	background: url("../images/icon_small/check.svg");
+	background-size: 100%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+@media only screen and (max-width: 340px){
+	.homepage-content h1{
+		font-size: 26px;
+	}
+}
+@media only screen and (min-width: 375px){
+	.homepage-content span{
+		display: block;
+	}
 }
 @media only screen and (min-width: 480px){
 	header{
@@ -352,21 +452,6 @@ footer p{
 	.head-desktop nav a:nth-child(3){
 		width: 56px;
 	}
-	.head-desktop .contact{
-		background-color: #ffdb00;
-		text-align: center;
-		border-radius: 5px;
-		padding: 10px 15px;
-	}
-	.head-desktop .contact::before{
-		content: '';
-		background-image: url("../images/icon_small/mail.svg");
-		background-size: 100%;
-		width: 16px;
-		height: 16px;
-		display: inline-block;
-		vertical-align: middle; 
-	}
 	main{
 		margin-top: 60px;
 	}
@@ -378,9 +463,6 @@ footer p{
 	}
 	.homepage-content h1{
 		font-size: 32px;
-	}
-	.homepage-content span{
-		margin-left: 16px;
 	}
 	.homepage-content img{
 		margin: 0 0 0 20px;
@@ -413,17 +495,19 @@ footer p{
 		overflow: hidden;
 	}
 	.fixed-btn button.gotop{
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
 	}
-	.contactme{
+	.contact.mobile{
 		display: none;
+	}
+	.information{
+		top: 49px;
+		bottom: auto;
+		right: 5%;
 	}
 }
 @media only screen and (min-width: 768px){
-	.homepage-content h1{
-		margin-top: -60px;
-	}
 	article{
 		width: calc(100% / 3 - 40px);
 	}
@@ -436,12 +520,14 @@ footer p{
 		margin-top: 0;
 	}
 }
+@media only screen and (min-width: 784px){
+	.homepage-content h1{
+		margin-top: -60px;
+	}
+}
 @media only screen and (min-width: 1024px){
 	.homepage-content h1{
 		font-size: 42px;
-	}
-	.homepage-content span{
-		margin-left: 22px;
 	}
 	.homepage-content img{
 		max-width: 344px;
@@ -463,10 +549,10 @@ footer p{
 	.head-desktop nav a:hover{
 		font-weight: 600;
 	}
-	.social a:hover, .gotop:hover, .contact:hover{
+	.social a:hover, .gotop:hover, .contact.desktop:hover, .copy-mail button:hover{
 		position: relative;
 	}
-	.contact:hover::after, .social a:hover::after, .gotop:hover::after{
+	.contact.desktop:hover::after, .social a:hover::after, .gotop:hover::after, .copy-mail button:hover::after{
 		content: "";
 		width: 100%;
 		height: 100%;
@@ -476,15 +562,23 @@ footer p{
 		top: 0;
 		left: 0;
 	}
-	.contact:hover::after{
+	.contact.desktop:hover::after{
 		font-weight: normal;
 		border-radius: 5px;	
 	}
 	.gotop:hover::after{
-		width: 62px;
-		height: 62px;
+		width: 55px;
+		height: 55px;
 		background-color: rgba(0,0,0,0.2);
-		top: 9px;
-		left: 9px;
+		top: 8px;
+		left: 8px;
+	}
+	.copy-mail button:hover::after{
+		border-radius: 0 5px 5px 0;
+	}
+}
+@media only screen and (min-width: 1124px){
+	.information{
+		right: calc(50% - 500px);
 	}
 }
