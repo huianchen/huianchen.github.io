@@ -325,6 +325,7 @@ footer p{
 }
 .mail.black::before{
 	background-image: url("../images/icon_small/mail.svg");
+	margin-right: 0;
 }
 .social{
 	margin-bottom: 0;
