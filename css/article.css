@@ -1,0 +1,146 @@
+.goback{
+	font-size: 14px;
+	text-align: left;
+	padding: 15px 0;
+	display: block;
+}
+.goback::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url("../images/icon_small/back.svg");
+	background-size: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.goback.sticky{
+	width: auto;
+	background-color: white;
+	padding: 10px 20px;
+}
+.article-details{
+	width: 90%;
+	margin: 0 auto;
+}
+.article-image{
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.article-tit{
+	font-size: 28px;
+	font-weight: 600;
+	color: rgba(0,0,0,0.75);
+	margin: 10px auto;
+}
+.article-content{
+	color: rgba(0,0,0,0.6);
+	margin-top: 20px;
+}
+.article-content p{
+	margin-bottom: 20px;
+}
+.article-content > .article-image{
+	max-width: 400px;
+	margin: 0 auto 20px auto;
+}
+.article-image.nomax{
+	max-width: none;
+}
+.article-section{
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	padding-bottom: 5px;
+	margin: 40px auto 10px auto;
+	border-bottom: 1px solid #ffdb00;
+}
+.article-recommended{
+	background-color: #f7f7f7; 
+	padding: 40px 5%;
+	margin: 40px auto 0 auto;
+	overflow: hidden;
+}
+.article-title{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+footer{
+	background: linear-gradient(to bottom, #f7f7f7 25%, black 0);
+}
+@media only screen and (min-width: 480px){
+	.goback{
+		margin-top: 60px;
+	}
+	main{
+		margin-top: 0;
+	}
+	article{
+		width: calc(100% - 22px);
+		margin: 0 1px 20px 1px;
+	}
+	article a{
+		width: calc(63% - 12px);
+		float: left;
+	}
+	.article-img{
+		width: 37%;
+		margin: 0 10px 0 0;
+	}
+	.article-brief{
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px){
+	main{
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.sticky + main{
+		padding-top: 107px;
+	}
+	.article-details, .article-recommended{
+		float: left;
+	}
+	.article-details{
+		width: calc(60% - 51px);
+	}
+	.article-recommended{
+		width: 36%;
+		height: calc(100vh - 155px);
+		background: none;
+		padding: 0 10px 0 20px;
+		margin: 0 0 0 20px;
+		border-left: 1px solid rgba(0,0,0,0.06);
+		position: fixed;
+		right: 5%;
+	}
+	footer{
+		background: linear-gradient(to bottom, white 25%, black 0);
+		margin-top: 80px;
+	}
+}
+@media only screen and (min-width: 805px){
+	.article-details{
+		width: calc(100% - 330px);
+	}
+	.article-recommended{
+		width: 279px;
+	}
+}
+@media only screen and (min-width: 1024px){
+	article{
+		width: calc(100% - 22px);
+	}
+}
+@media only screen and (min-width: 1116px){
+	.goback.sticky{
+		left: calc(50% - 500px);
+	}
+	.article-recommended{
+		right: calc(50% - 500px);
+	}
+}

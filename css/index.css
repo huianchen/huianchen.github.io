@@ -6,7 +6,7 @@ body{
 	font-size: 16px;
 	line-height: 1.5;
 }
-.head-desktop, .homepage-content, .content{
+.head-desktop, .homepage-content, .content, .goback{
 	width: 90%;
 	max-width: 1000px;
 	margin: 0 auto;
@@ -109,7 +109,7 @@ header{
 	font-weight: 600;
 	color: white;
 	position: absolute;
-	top: -35px;
+	top: -26px;
 	left: 0;
 }
 .homepage-content .author{
@@ -139,6 +139,7 @@ header{
 }
 article{
 	width: calc(100% - 22px);
+	background-color: white;
 	padding: 10px;
 	margin: 0 1px 20px 1px;
 	border-radius: 5px;
@@ -146,7 +147,7 @@ article{
 	float: left;
 	position: relative;
 }
-article::before, article::after{
+/*article::before, article::after{
 	width: 100%;
 	display: block;
 	position: absolute;
@@ -169,16 +170,18 @@ article::after{
 	margin: auto;
 	position: absolute;
 	top: calc(50% - 15px);
-}
+}*/
 article a{
 	width: calc(60% - 12px);
 	display: inline-block;
 	vertical-align: middle;
-	pointer-events: none;
+	/*pointer-events: none;*/
 }
 .article-img{
 	width: 39%;
 	margin-right: 10px;
+	border-radius: 5px;
+	overflow: hidden;
 }
 .article-title, .article-brief{
 	margin-bottom: 10px;
