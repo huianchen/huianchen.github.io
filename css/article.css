@@ -51,19 +51,21 @@
 .article-content ul.nostyle{
 	list-style-type: none;
 }
-.article-content > .article-image{
+.article-content > .article-image, figure > .article-image{
 	max-width: 400px;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 40px auto;
+}
+.article-content > .article-image{
+	margin-top: -20px;
 }
 .article-image.nomax{
 	max-width: none;
 }
 .article-section{
-	font-size: 18px;
+	font-size: 21px;
 	font-weight: 600;
 	color: black;
-	padding-bottom: 5px;
-	margin: 40px auto 10px auto;
+	margin: 60px auto 10px auto;
 	border-bottom: 1px solid #ffdb00;
 }
 .article-recommended{
