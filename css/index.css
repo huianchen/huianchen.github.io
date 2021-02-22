@@ -138,13 +138,12 @@ header{
 	border-left: 8px solid #ffdb00;
 }
 article{
-	width: calc(100% - 22px);
+	width: calc(100% - 22px); 
 	background-color: white;
 	padding: 10px;
 	margin: 0 1px 20px 1px;
 	border-radius: 5px;
 	box-shadow: 0 0 1px 0 rgba(0,0,0,0.4); 
-	float: left;
 	position: relative;
 }
 article a{
@@ -451,13 +450,17 @@ footer p{
 	.content.first{
 		margin-bottom: 40px;
 	}
+	.articles{
+		padding: 1px;
+		display: grid;
+		grid-template-columns: repeat(2, calc(50% - 10px));
+		grid-gap: 20px;
+	}
 	article{
-		width: calc(50% - 40px);
-		margin: 0 10px 20px 10px;
+		margin: 0;
 	}
 	article a{
 		width: 100%;
-		float: none;
 	}
 	.article-img{
 		width: 100%;
@@ -486,8 +489,8 @@ footer p{
 	}
 }
 @media only screen and (min-width: 768px){
-	article{
-		width: calc(100% / 3 - 40px);
+	.articles{
+		grid-template-columns: repeat(3, calc(100% / 3 - 13px));
 	}
 	.resume-content{
 		width: calc(50% - 20px);
@@ -511,8 +514,8 @@ footer p{
 		max-width: 344px;
 		margin: 0 0 0 40px;
 	}
-	article{
-		width: calc(25% - 40px);
+	.articles{
+		grid-template-columns: repeat(4, calc(25% - 15px));
 	}
 	article:hover{
 		transform: scale(1.02);
