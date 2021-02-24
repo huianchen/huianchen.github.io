@@ -26,11 +26,3 @@ function copyToClipboard() {
 	successed.innerHTML = "Copied";
 	successed.classList.add("successed");
 }
-
-$(".contact").click(function(){
-	$(".information").addClass("show");
-});
-
-$(".close").click(function(){
-	$(".information").removeClass("show");
-});
