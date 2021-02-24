@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-57Z2N45');</script>
-	<!-- End Google Tag Manager -->
+	})(window,document,'script','dataLayer','GTM-57Z2N45');
+
+	$(function(){
+	  $("#header").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+	</script>
 	<meta charset="UTF-8">
 	<title>Redesign Tasker出任務外包 - Anne's Projects</title>
 	<meta name="description" content="The Tasker team decided to redesign the website to attract more people to hire freelancers via Tasker.">
@@ -36,18 +41,7 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57Z2N45"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	<header>
-		<div class="head-desktop">
-			<a class="logo" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" title="Anne's portfolio" width="110"></a>
-			<nav>
-				<a href="index.html#projects" title="See projects">Projects</a>
-				<a href="index.html#resume" title="See resume">Resume</a>
-				<a href="index.html#about" title="About Anne">About</a>
-				<button class="contact desktop" title="Contact me">Contact</button>
-			</nav>
-		</div>
-		<a class="logo mobile" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" title="Anne's portfolio" width="110"></a>
-	</header>
+	<header id="header"></header>
 	<button class="goback" id="goBackBtn" onclick="goBack()" title="Go back">Back</button>
 	<main>
 		<section class="article-details">
@@ -116,27 +110,7 @@
 			</article>
 		</section>
 	</main>
-	<footer>
-		<p><img src="images/pics/photo.png" alt="Anne" title="Anne" width="80"></p>
-		<p class="white bold">Anne Chen</p>
-		<p class="mail">xiaoann.tw@gmail.com</p>
-		<p>Please do not hesitate to contact me!</p>
-		<p class="social">
-			<a href="https://www.linkedin.com/in/xiaoann/" title="Linkedin" target="_blank"><img src="images/icon_social/circle_linkedin.svg" alt="Linkedin" title="Linkedin" width="40"></a>
-			<a href="https://www.cakeresume.com/me/xiaoann" title="Cake Resume" target="_blank"><img src="images/icon_social/circle_cake.svg" alt="Cake Resume" title="Cake Resume" width="40"></a>
-			<a href="https://github.com/huianchen" title="GitHub" target="_blank"><img src="images/icon_social/circle_github.svg" alt="GitHub" title="GitHub" width="40"></a>
-			<a href="https://www.tasker.com.tw/workroom/BV7rVM?" title="Tasker工作室" target="_blank"><img src="images/icon_social/circle_tasker.svg" alt="Tasker工作室" title="Tasker工作室" width="40"></a>
-		</p>
-	</footer>
-	<div class="fixed-btn">
-		<button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="gotop" id="goTop" title="Go to top"></button>
-		<button class="contact mobile" title="Contact me"></button>
-	</div>
-	<div class="information">
-		<p class="bold">Contact me <button class="close"></button></p>
-		<p> Anne Chen</p>
-		<p class="copy-mail"><span class="mail black"><input type="text" value="xiaoann.tw@gmail.com" id="myEmail"></span><button onclick="copyToClipboard()" title="Copy mail address" id="copyBtn">Copy</button></p>
-	</div>
+	<footer id="footer"></footer>
 	<script>
 		window.onscroll = function() {stickyFunction()};
 		
