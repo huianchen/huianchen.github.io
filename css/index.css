@@ -410,6 +410,9 @@ footer p{
 	display: inline-block;
 	vertical-align: bottom;
 }
+.information .social{
+	margin: 0;
+}
 @media only screen and (max-width: 340px){
 	.homepage-content h1{
 		font-size: 26px;
@@ -567,6 +570,12 @@ footer p{
 		animation-name: hover;
 		animation-duration: 500ms;
 		animation-fill-mode: forwards;
+	}
+	.information .social a:hover::after{
+		width: 86%;
+		height: 86%;
+		top: 7%;
+		left: 6%;
 	}
 	@keyframes hover{
 		100%{
