@@ -183,6 +183,25 @@ article a{
 	vertical-align: text-bottom;
 	opacity: 0.6;
 }
+.download{
+	color: rgba(0,0,0,0.6);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2.5;
+	text-decoration: underline;
+	float: right;
+}
+.download::after{
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-image: url("../images/icon_small/open_in_new.svg");
+	background-size: 100%;
+	margin-left: 3px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	opacity: 0.6;
+}
 .resume-content{
 	overflow: hidden;
 }
@@ -516,6 +535,7 @@ footer p{
 	}
 	.articles{
 		grid-template-columns: repeat(4, calc(25% - 15px));
+		padding: 8px;
 	}
 	article:hover{
 		transform: scale(1.02);
@@ -552,7 +572,7 @@ footer p{
 		}
 	}
 	.contact.desktop:hover::after{
-		font-weight: normal;
+		font-weight: 400;
 		border-radius: 5px;	
 	}
 	.gotop:hover::after{
