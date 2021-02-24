@@ -172,7 +172,6 @@
 		</section>
 	</main>
 	<footer id="footer"></footer>
-	<script src="public.js"></script>
 	<script>
 		$(window).scroll(function(){
 		    if($(window).scrollTop() < $("#projects").offset().top - 10 || $(window).scrollTop() > $("#resume").offset().top - 10)
@@ -193,14 +192,6 @@
 		        $('#aboutBtn').removeClass('active');
 		    else
 		        $('#aboutBtn').addClass('active');
-		});
-
-		$(".contact").click(function(){
-			$(".information").addClass("show");
-		});
-
-		$(".close").click(function(){
-			$(".information").removeClass("show");
 		});
 	</script>
 </body>
