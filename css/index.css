@@ -410,7 +410,7 @@ footer p{
 	display: inline-block;
 	vertical-align: bottom;
 }
-.information .social{
+.information .social a{
 	margin: 0;
 }
 @media only screen and (max-width: 340px){
