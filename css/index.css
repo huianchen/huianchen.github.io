@@ -244,11 +244,13 @@ article a{
 }
 .details li{
 	margin-bottom: 5px;
+}
+.details .bullet-list li{
+	margin-left: 20px;
 	list-style: disc;
 }
 .details li.sub-title, .details li.nobullet{
 	margin-bottom: 10px;
-	list-style: none;
 }
 .details li.nobullet, .details.noborder .sub-title{
 	margin-left: -15px;
