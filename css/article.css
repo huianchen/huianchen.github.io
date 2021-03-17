@@ -27,6 +27,22 @@
 	border-radius: 5px;
 	overflow: hidden;
 }
+.note{
+	text-align: left;
+}
+.note span{
+	display: block;
+}
+.note span::before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: url("../images/icon_small/arrow.svg");
+	background-size: 100%;
+	opacity: 60%;
+	vertical-align: middle;
+	display: inline-block;
+}
 .article-tit{
 	font-size: 28px;
 	font-weight: 600;
