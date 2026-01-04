@@ -1,269 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-57Z2N45');</script>
-	<!-- End Google Tag Manager -->
 	<meta charset="UTF-8">
-	<title>Anne's Portfolio - A portfolio of a UX/UI designer & a web developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Hi, I'm Anne, a UX designer who can identify users' needs and come up with solutions, a UI designer who is able to create a mock-up and a prototype, and most importantly, I'm also a web developer who is good at HTML, CSS, Sass, and responsive web design. Here is my portfolio.">
 	<meta name="keywords" content="product design, UX designer, UI designer, web developer, web designer">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="google-site-verification" content="QdoxjLfBUXO8UkxClsyrax_sdIfFdWOPNiK5ca24IvM" />
-	<meta name="theme-color" content="#ffffff">
-	<meta property="og:title" content="Anne's Portfolio" />
-	<meta property="og:description" content="Hi, I'm Anne, a UX/UI designer and a web developer. Here's my portfolio." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://huianchen.github.io/" />
-	<meta property="og:image" content="https://huianchen.github.io/images/pics/og_image.png" />
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<meta name="author" content="Anne">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://huianchen.github.io/">
+	<meta property="og:title" content="Anne's Portfolio">
+	<meta property="og:description" content="Hi, I'm Anne, a UX designer who can identify users' needs and come up with solutions, a UI designer who is able to create a mock-up and a prototype, and most importantly, I'm also a web developer who is good at HTML, CSS, Sass, and responsive web design. Here is my portfolio.">
+	<meta property="og:image" content="https://huianchen.github.io/images/">
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://huianchen.github.io/">
+	<!-- Favicon -->
 	<link rel="icon" href="favicon.svg">
 	<link rel="alternate icon" href="favicon.ico" type="image/x-icon">
 	<link rel="mask-icon" href="mask-icon.svg" color="#000000">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="apple-touch-icon-precomposed" href="icon" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="site.webmanifest">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<title>Anne's Portfolio</title>
 </head>
+
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57Z2N45"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<header id="header">
-		<div class="head-desktop">
-			<a class="logo" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" title="Anne's portfolio" width="110"></a>
-			<nav>
-				<a href="#projects" title="See projects">Projects</a>
-				<a href="#resume" title="See resume">Resume</a>
-				<a href="#about" title="About Anne">About</a>
-				<button class="contact desktop" title="Contact me">Contact</button>
-			</nav>
-		</div>
-		<a class="logo mobile" href="index.html" title="Go to Anne Home"><img src="images/logo.svg" alt="Anne's portfolio" title="Anne's portfolio" width="110"></a>
+	<header role="banner" id="home">
+		<img src="./images/logo.svg" alt="logo" loading="eager" width="120">
 	</header>
-	<nav class="nav-mobile" id="navMobile">
-		<a href="#projects" id="projectBtn" title="See projects"><span>Projects</span></a>
-		<a href="#resume" id="resumeBtn" title="See resume"><span>Resume</span></a>
-		<a href="#about" id="aboutBtn" title="About Anne"><span>About</span></a>
+	<nav role="navigation" aria-label="navigation">
+		<ul class="nav-links">
+			<!-- <li><a class="capitalize" href="#home"><img src="./images/icons/home.svg" alt="home" loading="eager" width="16"><span>home</span></a></li> -->
+			<li><a class="capitalize" href="#portfolio"><img src="./images/icons/portfolio.svg" alt="portfolio" loading="eager" width="16"><span>portfolio</span></a></li>
+			<li><a class="capitalize" href="#about"><img src="./images/icons/about.svg" alt="about" loading="eager" width="16"><span>about</span></a></li>
+			<li><a class="capitalize" href="#contact"><img src="./images/icons/mail.svg" alt="contact" loading="eager" width="16"><span>contact</span></a></li>
+		</ul>
 	</nav>
 	<main>
-		<section class="homepage-container">
-			<div class="homepage-content">
-				<h1>Product design <span>is what I take pride in.”</span><span class="author">- Anne</span></h1>
-				<img src="images/illustration/anne.svg" alt="A UX/UI/web designer" title="A UX/UI/web designer">
-			</div>
+		<section id="intro">
+			<div class="max-width">Hi, <h1>I'm Anne, a UX/UI designer and a web developer.</h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod velit ac sapien facilisis, at accumsan tellus suscipit. Mauris pretium est quis lobortis sodales.</div>
+			<a class="capitalize cta-button" href="#contact"><svg>
+					<rect x="0" y="0" fill="none" width="100%" height="100%" xy="25" ry="25" />
+				</svg>get in touch<span><img src="./images/icons/arrow.svg" alt="arrow" loading="eager" width="16" height="16"></span></a>
 		</section>
-		<section class="content first" id="projects">
-			<h2 class="heading">Projects</h2>
-			<div class="articles">
-				<article>
-					<a class="article-img" href="redesign-the-signup-process.html" title="Redesign the signup process"><img src="images/pics/signup.jpg" alt="Redesign the signup process" title="Redesign the signup process" loading="lazy" width="100%"></a>
-					<a href="redesign-the-signup-process.html" title="Redesign the signup process">
-						<h3 class="article-title">Redesign the signup process</h3>
-						<span class="article-brief">The original registration process only allowed users to use their ID number to sign up. Besides, the users had to provide their email addresses. However, it has discouraged a lot of people from becoming a member. Hence, the Tasker team decided to redesign the signup process and make the users more willing to register Tasker.</span>
-						<span class="article-date">Launched in May 2020</span>
-					</a>
-				</article>
-				<article>
-					<a class="article-img" href="create-an-instant-chat-system.html" title="Create an instant chat system"><img src="images/pics/chat.jpg" alt="Create an instant chat system" title="Create an instant chat system" loading="lazy" width="100%"></a>
-					<a href="create-an-instant-chat-system.html" title="Create an instant chat system">
-						<h3 class="article-title">Create an instant chat system</h3>
-						<span class="article-brief">Looking for a freelancer on a platform is like searching for products on an e-commerce site. First, they browse freelancers’ artwork (products). Second, when they see the one they like, they use an instant chat system to ask freelancers (sellers) for more information. Thus, the instant chat system seems to play an important role in this process.</span>
-						<span class="article-date">Launched in Jan 2020</span>
-					</a>
-				</article>
-				<article>
-					<a class="article-img" href="redesign-the-portfolio-page.html" title="Redesign the portfolio page"><img src="images/pics/portfolio.jpg" alt="Redesign the portfolio page" title="Redesign the portfolio page" loading="lazy" width="100%"></a>
-					<a href="redesign-the-portfolio-page.html" title="Redesign the portfolio page">
-						<h3 class="article-title">Redesign the portfolio page</h3>
-						<span class="article-brief">By organizing the feedback given by freelancers, I discovered several problems that freelancers have encountered while editing their portfolios on Tasker</span>
-						<span class="article-date">Launched in Sep 2019</span>
-					</a>
-				</article>
-				<article>
-					<a class="article-img" href="redesign-tasker.html" title="Redesign Tasker - a freelancing platform"><img src="images/pics/tasker.jpg" alt="Redesign Tasker - a freelancing platform" title="Redesign Tasker - a freelancing platform" loading="lazy" width="100%"></a>
-					<a href="redesign-tasker.html" title="Redesign Tasker - a freelancing platform">
-						<h3 class="article-title">Redesign Tasker - a freelancing platform</h3>
-						<span class="article-brief">Before “Tasker”, the website was called “518外包網”, and it was designed for freelancers to find remote work. However, there were fewer and fewer jobs on the site. Thus, the Tasker team decided to rebrand the website to attract more people to hire freelancers via Tasker.</span>
-						<span class="article-date">Launched in Aug 2019</span>
-					</a>
-				</article>
-			</div>
+		<section id="portfolio">
+			<h2 class="sub-title white upper-case-bold">portfolio</h2>
+			<div id="portfolioGrid"></div>
 		</section>
-		<section class="content" id="resume">
-			<h2 class="heading">Resume<a class="download" href="anne_resume.pdf" title="Download Resume" target="_blank">Download Resume</a></h2>
-			<div class="resume-content">
-				<h3 class="resume-title bold">Work experience</h3>
-				<div class="left-column">Dec/2014<span>|</span><span>Jul/2020</span></div>
-				<ul class="details first">
-					<li class="sub-title"><span>Web designer</span>, ADDCN Technology</li>
-					<li>“Tasker” is a platform where people can find professional freelancers to assist them in achieving their goals. The following are what I accomplished:</li>
-					<li>
-						<ul class="bullet-list">
-							<li>Designed questionnaires to identify users’ needs and came up with solutions to make 85% of users satisfied with Tasker’s service.</li>
-							<li>Discovered problems that users had encountered and improved the usability of the website to increase conversions by 88%.</li>
-							<li>Created a user flow and wireframes to discuss with product managers and stakeholders.</li>
-							<li>Coded HTML/Sass to facilitate the process and collaborate with developers.</li>
-						</ul>
-					</li>
-				</ul>
-				<div class="left-column">Mar/2013<span>|</span><span>Aug/2014</span></div>
-				<ul class="details">
-					<li class="sub-title"><span>Graphic designer</span>, Wako</li>
-					<li>“taoru” is an eCommerce website that sells Japanese towels and handkerchiefs. The following are what I accomplished:</li>
-					<li>
-						<ul class="bullet-list">
-							<li>Designed banner ads, flyers, and brochures to draw customers’ attention.</li>
-							<li>Published products on different eCommerce platforms.</li>
-						</ul>
-					</li>
-				</ul>
-				<h3 class="resume-title bold second">Education</h3>
-				<div class="left-column">Sep/2007<span>|</span><span>Jun/2011</span></div>
-				<ul class="details">
-					<li class="sub-title"><span>B.S. in Textile & Clothing</span></li>
-					<li>Fu Jen University</li>
-				</ul>
-			</div>
-			<div class="resume-content second">
-				<h3 class="resume-title bold">Skills & Tools</h3>
-				<div class="skills-row">
-					<img src="images/icon/research_y.svg" alt="Research skills" title="Research skills" width="55">
-					<ul class="details noborder">
-						<li class="sub-title"><span>Research skills</span></li>
-						<li class="nobullet">Questionnaires, Data analysis</li>
-					</ul>
-				</div>
-				<div class="skills-row">
-					<img src="images/icon/design_y.svg" alt="Design skills" title="Design skills" width="55">
-					<ul class="details noborder">
-						<li class="sub-title"><span>Design skills</span></li>
-						<li class="nobullet">User flow, Wireframe, Mockup, Prototype, Banner ads, Logo, Photography</li>
-					</ul>
-				</div>
-				<div class="skills-row">
-					<img src="images/icon/develop_y.svg" alt="Coding skills" title="Coding skills" width="55">
-					<ul class="details noborder">
-						<li class="sub-title"><span>Coding skills</span></li>
-						<li class="nobullet">HTML, CSS, Sass, Responsive web design</li>
-					</ul>
-				</div>
-				<div class="skills-row">
-					<img src="images/icon/language_y.svg" alt="Language" title="Language" width="55">
-					<ul class="details noborder">
-						<li class="sub-title"><span>Language</span></li>
-						<li class="nobullet">Chinese: Native<p>English: Upper-intermediate, TOEFL iBT 101/120<p></li>
-					</ul>
-				</div>
-				<div class="skills-row last">
-					<img src="images/icon/tool_y.svg" alt="Tools" title="Tools" width="55">
-					<ul class="details noborder">
-						<li class="sub-title"><span>Tools</span></li>
-						<li class="nobullet">Sketch, Photoshop, Illustrator, InVision, Google Analytics, Hotjar, Gitlab, Github</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="content" id="about">
-			<h2 class="heading">About</h2>
-			<img class="about-img" src="images/pics/logo.jpg" alt="About Anne" title="About Anne" loading="lazy" width="100%">
-			<div class="about-content">
-				<p>“Product design is what I take pride in.” When talking about product design, there is always a spark in my eyes.</p> 
-				<p>For me, discovering users’ needs to finally satisfy those needs is a fascinating process. Because it not only allows me to deal with diverse tasks but also motivates me to keep learning the latest trends and best practices. Most importantly, it gives me a huge sense of achievement.</p>
-				<p class="last">I consider myself a curious person. Without a doubt that product design can satisfy my curiosity. Similarly, when I’m not working, I like to try new things such as running a half-marathon, biking up a mountain, or joining English study groups.</p>
+		<section id="about">
+			<h2 class="sub-title upper-case-bold">about</h2>
+			<div class="about-wrap max-width">
+				<div id="experience"></div>
+				<div id="skill"></div>
 			</div>
 		</section>
 	</main>
-	<footer id="footer">
-		<p><img src="images/pics/photo.png" alt="Anne" title="Anne" width="80"></p>
-		<p class="white bold">Anne Chen</p>
-		<p class="mail">xiaoann.tw@gmail.com</p>
-		<p>Please do not hesitate to contact me!</p>
-		<p class="social">
-			<a href="https://www.linkedin.com/in/xiaoann/" title="Linkedin" target="_blank"><img src="images/icon_social/circle_linkedin.svg" alt="Linkedin" title="Linkedin" width="40"></a>
-			<a href="https://www.cakeresume.com/me/xiaoann" title="Cake Resume" target="_blank"><img src="images/icon_social/circle_cake.svg" alt="Cake Resume" title="Cake Resume" width="40"></a>
-			<a href="https://github.com/huianchen" title="GitHub" target="_blank"><img src="images/icon_social/circle_github.svg" alt="GitHub" title="GitHub" width="40"></a>
-			<a href="https://www.tasker.com.tw/workroom/BV7rVM?" title="Tasker工作室" target="_blank"><img src="images/icon_social/circle_tasker.svg" alt="Tasker工作室" title="Tasker工作室" width="40"></a>
-		</p>
-		<div class="fixed-btn">
-			<button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="gotop" id="goTop" title="Go to top"></button>
-			<button class="contact mobile" title="Contact me"></button>
+	<footer id="contact">
+		<div class="contact-info">
+			<img src="./images/photo.png" alt="photo" loading="eager" width="100">
+			<h2>Anne Chen</h2>
+			<h3>Please do not hesitate to reach out to me.</h3>
+			<div class="contact-mail">
+				<img src="./images/icons/mail-white.svg" alt="home" loading="eager" width="16">
+				<span>xiaoann.tw@gmail.com</span>
+				<button title="Copy" onclick="copyEmail()"><img src="./images/icons/copy.svg" alt="copy" loading="eager" width="20"></button>
+			</div>
+			<p id="toast" class="toast">Email 已複製</p>
 		</div>
-		<div class="information">
-			<p class="bold">Contact Anne<button class="close" title="Close"></button></p>
-			<p>by Email</p>
-			<p class="copy-mail"><span class="mail black"><input type="text" value="xiaoann.tw@gmail.com" id="myEmail"></span><button onclick="copyToClipboard()" title="Copy mail address" id="copyBtn">Copy</button></p>
-			<p>by Other Platforms</p>
-			<p class="social">
-				<a href="https://www.linkedin.com/in/xiaoann/" title="Linkedin" target="_blank"><img src="images/icon_social/circle_linkedin.svg" alt="Linkedin" title="Linkedin" width="40"></a>
-				<a href="https://www.cakeresume.com/me/xiaoann" title="Cake Resume" target="_blank"><img src="images/icon_social/circle_cake.svg" alt="Cake Resume" title="Cake Resume" width="40"></a>
-			</p>
-		</div>
+		<ul class="contact-social">
+			<li><a href="https://www.linkedin.com/in/xiaoann/" title="Linkedin" target="_blank"><img src="./images/circle_linkedin.png" alt="linkedin" loading="eager" width="40"></a></li>
+			<!-- <li><a href="" title="104" target="_blank"><img src="./images/circle_104.png" alt="104" loading="eager" width="40"></a></li> -->
+			<li><a href="https://www.cakeresume.com/me/xiaoann" title="Cake Resume" target="_blank"><img src="./images/circle_cake.png" alt="cake resume" loading="eager" width="40"></a></li>
+			<li><a href="https://github.com/huianchen" title="GitHub" target="_blank"><img src="./images/circle_github.png" alt="github" loading="eager" width="40"></a></li>
+		</ul>
 	</footer>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="js/content.js"></script>
 	<script>
-		$(window).scroll(function(){
-		    if($(window).scrollTop() < $("#projects").offset().top - 10 || $(window).scrollTop() > $("#resume").offset().top - 10)
-		        $('#projectBtn').removeClass('active');
-		    else
-		        $('#projectBtn').addClass('active');
-		});
+		function copyEmail() {
+			navigator.clipboard.writeText('xiaoann.tw@gmail.com')
+				.then(() => {
+					showToast('Email 已複製');
+				})
+				.catch(err => {
+					console.error('複製失敗:', err);
+					showToast('複製失敗，請重試');
+				});
+		}
 
-		$(window).scroll(function(){
-		    if($(window).scrollTop() < $("#resume").offset().top - 10 || $(window).scrollTop() > $("#about").offset().top - 10)
-		        $('#resumeBtn').removeClass('active');
-		    else
-		        $('#resumeBtn').addClass('active');
-		});
+		function showToast(message) {
+			const toast = document.getElementById('toast');
+			toast.textContent = message;
+			toast.classList.add('show');
 
-		$(window).scroll(function(){
-		    if($(window).scrollTop() < $("#about").offset().top - 10)
-		        $('#aboutBtn').removeClass('active');
-		    else
-		        $('#aboutBtn').addClass('active');
-		});
-
-		window.onscroll = function() {stickyFunction()};
-				
-			function stickyFunction() {
-				var header = document.getElementById("navMobile");
-				
-				var sticky = header.offsetTop;
-				
-				if (screen.width < 480){
-					if (window.pageYOffset > sticky) {
-						header.classList.add("sticky");
-					} else {
-						header.classList.remove("sticky");
-					}
-				}
-			}
-
-			function copyToClipboard() {
-				var copyText = document.getElementById("myEmail");
-
-				copyText.select();
-				copyText.setSelectionRange(0, 99999);
-
-				document.execCommand("copy");
-
-				var successed = document.getElementById("copyBtn");
-				successed.innerHTML = "Copied";
-				successed.classList.add("successed");
-			}
-
-			$(".contact").click(function(){
-				$(".information").addClass("show");
-			});
-
-			$(".close").click(function(){
-				$(".information").removeClass("show");
-			});
+			setTimeout(() => {
+				toast.classList.remove('show');
+			}, 2000);
+		}
+		
 	</script>
 </body>
+
 </html>
