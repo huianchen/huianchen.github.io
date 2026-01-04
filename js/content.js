@@ -84,7 +84,7 @@ createApp({
             </li>
             <li class="experience-right">
                 <h4 class="upper-case">{{ item.title }}</h4>
-                <p>{{ item.description }}</p>
+                <h5>{{ item.description }}</h5>
             </li>
         </ul>
     `,
@@ -133,11 +133,11 @@ createApp({
             class="skill-wrap">
             <h4 class="upper-case">{{ item.title }}</h4>
             <div class="tag-wrap">
-                <p 
+                <h5 
                     v-for="(tag, index) in item.tags" 
                     :key="index">
                     {{ tag }}
-                </p>
+                </h5>
             </div>
         </div>
     `,

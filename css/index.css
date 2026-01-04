@@ -54,6 +54,7 @@ h6 {
 
 h4, h5, h6 {
   font-weight: normal!important;
+  font-size: 1rem;
 }
 
 ul,
@@ -400,7 +401,7 @@ nav {
   position: relative;
 }
 
-.experience-left p:last-of-type, .experience-right p:last-of-type {
+.experience-left p:last-of-type, .experience-right h5 {
   color: var(--gray);
 }
 
@@ -445,7 +446,7 @@ nav {
   }
 }
 
-.tag-wrap p {
+.tag-wrap h5 {
   display: inline-block;
   text-transform: capitalize;
   color: var(--gray);
