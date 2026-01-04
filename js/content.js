@@ -95,7 +95,7 @@ createApp({
                     id: 1,
                     time: "2021 - Present",
                     company: "Garmin Ltd.",
-                    title: "UX designer & web designer",
+                    title: "UX/UI designer & web designer",
                     description: "Lorem ipsum dolor sit amet consectetur. Blandit purus rhoncus velit morbi turpis sed imperdiet ac urna. Risus cursus euismod faucibus consectetur."
                 },
                 {
