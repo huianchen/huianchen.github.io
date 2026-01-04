@@ -146,7 +146,7 @@ createApp({
             skillItems: [
                 {
                     id: 1,
-                    title: "UX design skills",
+                    title: "UX/UI design skills",
                     tags: ["data analysis", "user flow creation", "wireframing", "mockup creation", "prototyping", "usability testing"]
                 },
                 {
