@@ -525,6 +525,16 @@ footer::before {
   gap: var(--gap-s);
 }
 
+.gotop {
+  padding: 15px;
+  background-color: var(--gray);
+  border-radius: 50%;
+  position: fixed;
+  bottom: var(--gap-l);
+  right: 5px;
+  opacity: 0.5;
+}
+
 @media only screen and (min-width: 1024px) {
   footer {
     margin-top: var(--gap-m);
@@ -539,12 +549,8 @@ footer::before {
   }
 }
 
-.gotop {
-  padding: 15px;
-  background-color: var(--gray);
-  border-radius: 50%;
-  position: fixed;
-  bottom: var(--gap-l);
-  right: 5px;
-  opacity: 0.5;
+@media only screen and (min-width: 1200px) {
+  .gotop {
+    right: calc(50% - 600px);
+  }
 }
