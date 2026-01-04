@@ -35,7 +35,6 @@
 	</header>
 	<nav role="navigation" aria-label="navigation">
 		<ul class="nav-links">
-			<!-- <li><a class="capitalize" href="#home"><img src="./images/icons/home.svg" alt="home" loading="eager" width="16"><span>home</span></a></li> -->
 			<li><a class="capitalize" href="#portfolio"><img src="./images/icons/portfolio.svg" alt="portfolio" loading="eager" width="16"><span>portfolio</span></a></li>
 			<li><a class="capitalize" href="#about"><img src="./images/icons/about.svg" alt="about" loading="eager" width="16"><span>about</span></a></li>
 			<li><a class="capitalize" href="#contact"><img src="./images/icons/mail.svg" alt="contact" loading="eager" width="16"><span>contact</span></a></li>
@@ -45,7 +44,9 @@
 		<section id="intro">
 			<div class="max-width">Hi, <h1>I'm Anne, a UX/UI designer and a web developer.</h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod velit ac sapien facilisis, at accumsan tellus suscipit. Mauris pretium est quis lobortis sodales.</div>
 			<a class="capitalize cta-button" href="#contact">
-				<svg><rect x="0" y="0" fill="none" width="100%" height="100%" xy="25" ry="25" /></svg>get in touch<span><img src="./images/icons/arrow.svg" alt="arrow" loading="eager" width="16" height="16"></span>
+				<svg>
+					<rect x="0" y="0" fill="none" width="100%" height="100%" xy="25" ry="25" />
+				</svg>get in touch<span><img src="./images/icons/arrow.svg" alt="arrow" loading="eager" width="16" height="16"></span>
 			</a>
 		</section>
 		<section id="portfolio">
@@ -80,7 +81,6 @@
 		</ul>
 	</footer>
 	<button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="gotop" id="goTop" title="Go to top"><img src="./images/icons/arrow-up.svg" alt="github" loading="eager" width="20"></button>
-	
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script src="js/content.js"></script>
 	<script>
@@ -104,7 +104,18 @@
 				toast.classList.remove('show');
 			}, 2000);
 		}
-		
+
+		window.addEventListener('scroll', function () {
+			const goTopBtn = document.getElementById('goTop');
+			const viewportHeight = window.innerHeight - 500; // 100vh
+
+			if (window.scrollY > viewportHeight) {
+				goTopBtn.classList.add('show');
+			} else {
+				goTopBtn.classList.remove('show');
+			}
+		});
+
 	</script>
 </body>
 
