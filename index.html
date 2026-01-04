@@ -26,7 +26,7 @@
 	<link rel="manifest" href="site.webmanifest">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	<title>Anne's Portfolio</title>
+	<title>Anne's Portfolio - A UX/UI Designer</title>
 </head>
 
 <body>
@@ -44,16 +44,16 @@
 	<main>
 		<section id="intro">
 			<div class="max-width">Hi, <h1>I'm Anne, a UX/UI designer and a web developer.</h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod velit ac sapien facilisis, at accumsan tellus suscipit. Mauris pretium est quis lobortis sodales.</div>
-			<a class="capitalize cta-button" href="#contact"><svg>
-					<rect x="0" y="0" fill="none" width="100%" height="100%" xy="25" ry="25" />
-				</svg>get in touch<span><img src="./images/icons/arrow.svg" alt="arrow" loading="eager" width="16" height="16"></span></a>
+			<a class="capitalize cta-button" href="#contact">
+				<svg><rect x="0" y="0" fill="none" width="100%" height="100%" xy="25" ry="25" /></svg>get in touch<span><img src="./images/icons/arrow.svg" alt="arrow" loading="eager" width="16" height="16"></span>
+			</a>
 		</section>
 		<section id="portfolio">
-			<h2 class="sub-title white upper-case-bold">portfolio</h2>
+			<h2 class="sub-title white upper-case-bold">Portfolio</h2>
 			<div id="portfolioGrid"></div>
 		</section>
 		<section id="about">
-			<h2 class="sub-title upper-case-bold">about</h2>
+			<h2 class="sub-title upper-case-bold">About</h2>
 			<div class="about-wrap max-width">
 				<div id="experience"></div>
 				<div id="skill"></div>
@@ -70,7 +70,7 @@
 				<span>xiaoann.tw@gmail.com</span>
 				<button title="Copy" onclick="copyEmail()"><img src="./images/icons/copy.svg" alt="copy" loading="eager" width="20"></button>
 			</div>
-			<p id="toast" class="toast">Email 已複製</p>
+			<p id="toast" class="toast"></p>
 		</div>
 		<ul class="contact-social">
 			<li><a href="https://www.linkedin.com/in/xiaoann/" title="Linkedin" target="_blank"><img src="./images/circle_linkedin.png" alt="linkedin" loading="eager" width="40"></a></li>
@@ -79,17 +79,19 @@
 			<li><a href="https://github.com/huianchen" title="GitHub" target="_blank"><img src="./images/circle_github.png" alt="github" loading="eager" width="40"></a></li>
 		</ul>
 	</footer>
+	<button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="gotop" id="goTop" title="Go to top"><img src="./images/icons/arrow-up.svg" alt="github" loading="eager" width="20"></button>
+	
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script src="js/content.js"></script>
 	<script>
 		function copyEmail() {
 			navigator.clipboard.writeText('xiaoann.tw@gmail.com')
 				.then(() => {
-					showToast('Email 已複製');
+					showToast('Copied to clipboard.');
 				})
 				.catch(err => {
 					console.error('複製失敗:', err);
-					showToast('複製失敗，請重試');
+					showToast('Failed to copy email, please try again.');
 				});
 		}
 

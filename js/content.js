@@ -95,28 +95,28 @@ createApp({
                     id: 1,
                     time: "2021 - Present",
                     company: "Garmin Ltd.",
-                    title: "UX DESIGNER & WEB DESIGNER",
+                    title: "UX designer & web designer",
                     description: "Lorem ipsum dolor sit amet consectetur. Blandit purus rhoncus velit morbi turpis sed imperdiet ac urna. Risus cursus euismod faucibus consectetur."
                 },
                 {
                     id: 2,
                     time: "2014 - 2020",
                     company: "數字科技股份有限公司",
-                    title: "web designer",
+                    title: "Web designer",
                     description: "Lorem ipsum dolor sit amet consectetur. Blandit purus rhoncus velit morbi turpis sed imperdiet ac urna. Risus cursus euismod faucibus consectetur."
                 },
                 {
                     id: 3,
                     time: "2013 - 2014",
                     company: "和綿有限公司",
-                    title: "graphic designer",
+                    title: "Graphic designer",
                     description: "Lorem ipsum dolor sit amet consectetur. Blandit purus rhoncus velit morbi turpis sed imperdiet ac urna. Risus cursus euismod faucibus consectetur."
                 },
                 {
                     id: 4,
                     time: "2007 - 2011",
                     company: "Fu Jen Catholic University",
-                    title: "BACHELOR OF TEXTILE AND CLOTHING",
+                    title: "Bachelor of textile and clothing",
                     description: "Lorem ipsum dolor sit amet consectetur. Blandit purus rhoncus velit morbi turpis sed imperdiet ac urna. Risus cursus euismod faucibus consectetur."
                 }
             ]
@@ -146,23 +146,23 @@ createApp({
             skillItems: [
                 {
                     id: 1,
-                    title: "ux design skills",
-                    tags: ["data analysis", "User flow creation", "Wireframing", "mockup creation", "Prototyping", "Usability Testing"]
+                    title: "UX design skills",
+                    tags: ["data analysis", "user flow creation", "wireframing", "mockup creation", "prototyping", "usability testing"]
                 },
                 {
                     id: 2,
-                    title: "web design skills",
+                    title: "Web design skills",
                     tags: ["website layout design", "banner design", "HTML", "CSS", "Sass"]
                 },
                 {
                     id: 3,
-                    title: "software skills",
+                    title: "Software skills",
                     tags: ["figma", "gitHub", "google tag manager", "google analytics", "looker studio", "bigQuery"]
                 },
                 {
                     id: 4,
-                    title: "language proficiency",
-                    tags: ["chinese - native", "english - upper-intermediate"]
+                    title: "Language proficiency",
+                    tags: ["Chinese - native", "English - upper-intermediate"]
                 },
             ]
         }
