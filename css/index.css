@@ -500,13 +500,13 @@ footer::before {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 7px 7px 7px 14px;
+  padding: 10px 10px 10px 15px;
   border: 1px solid var(--primary);
-  border-radius: 28px;
+  border-radius: 27px;
 }
 
 .contact-mail button {
-  padding: 10px;
+  padding: 8px;
   background-color: var(--primary);
   border-radius: 50%;
 }
