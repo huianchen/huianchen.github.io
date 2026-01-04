@@ -11,7 +11,6 @@ createApp({
                         :src="item.image"
                         :alt="item.title"
                         width="320"
-                        height="217"
                         loading="lazy">
                     
                     <div class="portfolio-content">
@@ -27,42 +26,42 @@ createApp({
             portfolioItems: [
                 {
                     id: 1,
-                    image: "",
+                    image: "./images/article.jpg",
                     title: "Lorem ipsum dolor sit",
                     description: "Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec",
                     url: ""
                 },
                 {
                     id: 2,
-                    image: "",
+                    image: "./images/article.jpg",
                     title: "Lorem ipsum dolor sit",
                     description: "Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec",
                     url: ""
                 },
                 {
                     id: 3,
-                    image: "",
+                    image: "./images/article.jpg",
                     title: "Lorem ipsum dolor sit",
                     description: "Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec",
                     url: ""
                 },
                 {
                     id: 4,
-                    image: "",
+                    image: "./images/article.jpg",
                     title: "Lorem ipsum dolor sit",
                     description: "Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec",
                     url: ""
                 },
                 {
                     id: 5,
-                    image: "",
+                    image: "./images/article.jpg",
                     title: "Lorem ipsum dolor sit",
                     description: "Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec",
                     url: ""
                 },
                 {
                     id: 6,
-                    image: "",
+                    image: "./images/article.jpg",
                     title: "Lorem ipsum dolor sit",
                     description: "Lorem ipsum dolor sit amet consectetur. Ac mauris nam platea donec",
                     url: ""
